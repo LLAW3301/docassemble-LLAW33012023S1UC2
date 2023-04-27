@@ -36,12 +36,12 @@ code: |
     ineligible_endpoint_3        
   elif correct_date and correct_purpose and correct_repayment_time and not correct_borrower:
     ineligible_endpoint_4
-  elif correct_date and correct_purpose and correct_repayment_time and correct_borrower and irresponsible_direction: 
+  elif correct_date and correct_purpose and correct_repayment_time and correct_borrower and issue_type == 'irresponsible_direction': 
     irresponsible_lending_endpoint
-  elif correct_date and correct_purpose and correct_repayment_time and correct_borrower and not irresponsible_direction: 
+  elif correct_date and correct_purpose and correct_repayment_time and correct_borrower and issue_type == 'hardship_direction': 
     hardship_endpoint
   else:
-    irresponsible_lending_endpoint
+    hardship_endpoint
 ---
 # Failed date threshold
 event: ineligible_endpoint_1
