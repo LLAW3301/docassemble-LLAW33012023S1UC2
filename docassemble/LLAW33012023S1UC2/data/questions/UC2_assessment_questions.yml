@@ -1,0 +1,30 @@
+---
+# Substantial hardship indicator
+question: Substantial Hardship Indicator
+subquestion: | 
+fields: 
+  - Would you only be able to make repayments if you sold your primary place or residence?: substantial_hardship_indicator
+    datatype: yesnoradio
+    
+   # include in here the hardship calculator model
+---
+# Irresponsible lending indicators
+question: Indicators of Irresponsible Lending
+subquestion: | 
+fields: 
+  - Please select all which apply: irresponsible_indicators
+    datatype: checkboxes
+    choices:
+      - My lender did not ask me what I wanted the loan for: asked_why
+      - My lender did not ask me about by financial situation before giving me the loan: asked_situation
+      - My lender did not ask about my actual living expenses before giving me the loan: asked_expenses
+      - My lender did not obtain statements of my expenses before giving me the loan: statements_expenses
+      - I was suffereing from an illness or disability when I received the loan: illness
+      - I was elderly when I received the loan: elderly 
+      - I was not able to properly understand English when I received the loan: language
+      - My loan was an interest only loan: interest_only 
+      - My lender did not inspect my bank account statements: statements_account
+      - I already had other loans yet to be repayed when I took out the loan: other_loans
+      - My home was used as security for a loan used to buy an investment property: investment_property 
+      - My ability to repay the loan was dependent on rising house prices: house_prices
+---

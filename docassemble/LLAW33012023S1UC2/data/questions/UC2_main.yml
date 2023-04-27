@@ -1,0 +1,119 @@
+---
+# Including other files
+include:
+  - UC2_threshold_questions.yml
+  - UC2_directing_questions.yml
+  - UC2_assessment_questions.yml
+---
+mandatory: true
+question: Welcome
+subquestion: |
+  Welcome to the Uniting Communities Consumer Credit Law Centre of South Australia's Preliminary Loan Inspector application. 
+  
+  This web application is designed for people in Australia who are struggling to repay a loan - if that is not you please press exit.
+  
+  You will be asked a series of questions with the aim of identifying whether you may be dealing with a responsible lending issue.
+  
+  Lenders have an obligation to not give loans that are unsuitable, and so you may be able to be placed back in the position you were in before being given the loan. It is the lender's responsibility to make reasonable inquires into your circumstances.
+  
+  *Disclaimer*
+  This application does not offer legal advice 
+  ** - insert privacy policy here - **
+  
+buttons:
+  - Accept and continue: continue
+  - Exit: exit
+    url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
+---
+mandatory: True
+code: |
+  # Threhold Questions
+  if not correct_date:
+    ineligible_endpoint_1
+  elif correct_date and not correct_purpose:
+    ineligible_endpoint_2
+  elif correct_date and correct_purpose and not correct_repayment_time:
+    ineligible_endpoint_3        
+  elif correct_date and correct_purpose and correct_repayment_time and not correct_borrower:
+    ineligible_endpoint_4
+  elif correct_date and correct_purpose and correct_repayment_time and correct_borrower and irresponsible_direction: 
+    irresponsible_lending_endpoint
+  elif correct_date and correct_purpose and correct_repayment_time and correct_borrower and not irresponsible_direction: 
+    hardship_endpoint
+  else:
+    irresponsible_lending_endpoint
+---
+# Failed date threshold
+event: ineligible_endpoint_1
+question: Inapplicable Date
+subquestion: |
+  Apolgies, this application is only able to help with loans taken out on or after the 1st of July, as this was the date new credit legislation came into force.
+
+buttons:
+  - Restart the application: restart
+  - Exit: exit
+    url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
+---
+# Failed purpose threshold
+event: ineligible_endpoint_2
+question: Inapplicable Purpose
+subquestion: |
+  Apolgies, this application is only able to help with loans taken out for personal purposes, as the protections available under the law are specifically available for this reason ? ** come back to this **
+  
+buttons:
+  - Restart the application: restart
+  - Exit: exit
+    url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
+---
+# Failed repayment time threshold
+event: ineligible_endpoint_3
+question: Inapplicable Repayment Time Frame
+subquestion: |
+  Apolgies, this application is only able to help with loans that can be repaid in longer than 62 days due to the legislation **blah blah reqword here**
+  
+buttons:
+  - Restart the application: restart
+  - Exit: exit
+    url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
+---
+# Failed borrower threshold
+event: ineligible_endpoint_4
+question: Inapplicable Borrower
+subquestion: |
+  Apolgies, this application is only able to help with loans taken from licensed credit lenders, the protections available under the NCC do not extend to loans taken from family/friends **blah blah reword**
+
+buttons:
+  - Restart the application: restart
+  - Exit: exit
+    url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
+---
+event: hardship_endpoint
+question: Possible Hardship 
+subquestion: | 
+  It seems possible that, rather than an irresponsible lending issue, you may be dealing with hardship. There are ways to get help. Please reach out to UC for legal support **blah blah edit wording**
+  
+buttons:
+  - Restart the application: restart
+  - Exit: exit
+    url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
+---
+event: irresponsible_lending_endpoint
+question: Possible Responsible Lending Issue
+subquestion: | 
+  It it possible that you are dealing with a responsible lending issue. 
+  
+  These factors indicate that you may be dealing with a responsible lending issue: 
+  ${irresponsible_indicators.true_values()}
+  
+  These factors indicate that you may be suffering from harship/severe hardship: 
+  **work this out** 
+  
+  As such it is recommended that you reach out to UC, or a like service, to receive legal help **blah blah fix wording**
+  
+  It may also be useful to request from your bank a copy of the assessment required under section 129 of the *National Consumer Credit Protection Act* and to bring this with you to seek legal advice. As it is the lender's responsibility to make reasonable inquires into your circumstances, deficiencies in this assessment support the possibility that you may be experiencing a responsible lending issue.
+
+buttons:
+  - Restart the application: restart
+  - Exit: exit
+    url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
+---
