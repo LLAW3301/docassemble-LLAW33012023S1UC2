@@ -6,16 +6,16 @@ fields:
   - Please select the scenario that sounds the most like you: issue_type
     datatype: radio
     choices:
-      - Always struggled to make repayments on the loan: always
-      - Only started to struggle to make repayments after an interest  only period ended: interest_only
-      - Started to struggle to make repayments after a change in circumstances that was foreseeable at the time of the loan: foreseeable
-      - Only started to struggle to make repayments due to changes of personal circumstances that were not foreseeable at the time of taking out the loan: unforeseeable
+      - Always struggled to make repayments on the loan: irresponsible_direction
+      - Only started to struggle to make repayments after an interest  only period ended: irresponsible_direction
+      - Started to struggle to make repayments after a change in circumstances that was foreseeable at the time of the loan: irresponsible_direction
+      - Only started to struggle to make repayments due to changes of personal circumstances that were not foreseeable at the time of taking out the loan: hardship_direction
 ---
-code: |
-  if issue_type == 'always' or 'interest_only' or 'foreseeable':
-    irresponsible_direction = True
-  elif issue_type == 'unforeseeable': 
-    irresponsible_direction = False
-  else:
-    irresponsible_direction = False
+#code: |
+ # if issue_type == 'always' or 'interest_only' or 'foreseeable':
+ #   irresponsible_direction = True
+ # elif issue_type == 'unforeseeable': 
+ #   irresponsible_direction = False
+ # else:
+ #   irresponsible_direction = True
 --- 
