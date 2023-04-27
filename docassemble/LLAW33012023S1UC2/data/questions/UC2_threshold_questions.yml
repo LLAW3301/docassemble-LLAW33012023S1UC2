@@ -1,0 +1,29 @@
+---
+# Date loan is taken out
+question: Date of loan 
+subquestion: | 
+fields: 
+  - Did you take out this loan on or after the 1st of July 2010?: correct_date
+    datatype: yesnoradio
+---
+# Purpose of loan
+question: Purpose of loan 
+subquestion: | 
+fields: 
+  - Did you take this loan out for a personal purpose (not a business purpose)?: correct_purpose
+    datatype: yesnoradio
+---
+# Is it too short
+question: Length of repayment
+subquestion: | 
+fields: 
+  - Do you have more than 62 days to repay the loan after taking it out?: correct_repayment_time
+    datatype: yesnoradio
+---
+# The correct borrower
+question: Where the loan came from
+subquestion: | 
+fields: 
+  - Did you take the loan from a licensed credit lender? (not family/friends or from another business)?: correct_borrower
+    datatype: yesnoradio
+---
