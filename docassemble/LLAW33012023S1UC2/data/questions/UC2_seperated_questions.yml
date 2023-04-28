@@ -9,12 +9,10 @@ fields:
   - How much are your rent repayments each week?: rent_repayments
 ---
 question: |
-  Would you only be able to make repayments if you sold your primary place of residence?
-field: substantial_hardship_indicator
-dropdown:
-  - No
-  - Yes
-  - Does not apply (I do not own my home)
+  Would you only be able to make repayments if you sold your primary place of residence? 
+yesno: substantial_hardship_indicator
+under: |
+  If you do not own your own home, select 'no'
 ---
 # Questions about your lender 
 question: | 
@@ -22,11 +20,17 @@ question: |
 fields: 
   - "Did your lender ask what you wanted the loan for?": asked_why
     datatype: noyesradio
+    
+    
   - "Did your lender ask about your financial situation before giving you the loan?": asked_situation
     datatype: noyesradio
+    
+    
   - "Did your lender inspect your bank account statements?": statements_account
     datatype: noyesradio
-  - "Did your lender ask about your actual living expenses or obtain statements of your expenses before giving you the loan?": statements_account
+    
+    
+  - "Did your lender ask about your actual living expenses or obtain statements of your expenses before giving you the loan?": actual_expenses
     datatype: noyesradio
 ---
 # Questions about your situation at the time of the loan
@@ -44,7 +48,7 @@ fields:
   - "Was your ability to repay the loan based on raising house prices?": house_prices
     datatype: yesnoradio
 ---
-# Questions about your situation at the time of the loan
+# Questions about your loan
 question: | 
   This is a series of questions about your loan. 
 fields: 
