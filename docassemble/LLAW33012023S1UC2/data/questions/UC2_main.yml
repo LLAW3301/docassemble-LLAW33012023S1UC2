@@ -102,52 +102,89 @@ event: irresponsible_lending_endpoint
 question: Possible Responsible Lending Issue
 subquestion: | 
   It it possible that you are dealing with a responsible lending issue. 
-  
-  Review below your answers to the questions and whether your answer indicates a responsible lending issue.
-  
-  ** Questions about your lender **
-  
-     Question|Whether your answer indicates irresponsible lending
-  -----------|----------
-  Did your lender ask what you wanted the loan for?          | ${ asked_why } 
-  Did your lender ask about your financial situation before giving you the loan?  | ${ asked_situation }
-  Did your lender inspect your bank account statements?   | ${ statements_account }
-  Did your lender ask about your actual living expenses or obtain statements of your living expenses before giving you the loan?  | ${ actual_expenses }
-  
-
-  ** Questions about your situation at the time of the loan ** 
-  
-     Question|Whether your answer indicates irresponsible lending
-  -----------|----------
-  When you received the loan were you elderly?            | ${ elderly } 
-  When you received the loan were you suffering from an illness/disability?        | ${ illness }
-  When you received the loan were you unable to understand English?   | ${ language }
-  When you received the loan did you already have other loans you were still paying off? | ${ other_loans }
-  Was your ability to repay the loan based on raising house prices? | ${ house_prices }
+  Read the following sections to better understand your issue. 
 
 
-  ** Questions about your loan ** 
+
+  % if asked_why or asked_situation or statements_account or actual_expenses:
+  ####Lender's Responsibilities
+  *It is your lenders responsibility to investigate your financial situation before providing you with a loan, these facts about your lender may indicate a responsible lending issue:*
+  % endif
   
-     Question|Whether your answer indicates irresponsible lending
-  -----------|----------
-  Was your loan an 'interest only' loan?        | ${ interest_only } 
-  Was your home used as security for a loan to buy an investment property?  | ${ investment_property }
+  % if asked_why:
+    - Your lender did not ask what you wanted the loan for.
+  % endif 
+  
+  % if asked_situation:
+    - Your lender did not ask you about your financial situation before giving you the loan.
+  % endif   
+  
+  % if statements_account:
+    - Your lender did not inspect your bank statements before giving you the loan.
+  % endif   
+ 
+  % if actual_expenses:
+    - Your lender did not ask you about your actual living expenses, or obtain statements of your expenses before giving you the loan.
+  % endif   
+
+
+
+  % if elderly or illness or language or other_loans or house_prices:
+  ####Your Situation at the Time of Receiving the Loan
+  *When your lender does this investigation, there are some factors they must consider that may indicate that a loan is not-suitable. You indicated that these factors were true for you:*
+  % endif
+  
+  % if elderly:
+  - You were elderly at the time of receiving the loan. 
+  % endif 
+  
+  %if illness: 
+  - You were suffering from an illness or disability at the time of receiving the loan. 
+  % endif
+  
+  % if language:
+  - You were unable to understand English at the time of receiving the loan.
+  % endif
+  
+  % if other_loans:
+  - You were still paying off other loans at the time of receiving this new loan. 
+  % endif 
   
   
+
+  % if interest_only or investment_property:
+  ####Nature of your Loan
+  *The nature of some loans may also indicate a responsible lending issue. You indicated that these factors are relevant for you:*
+  % endif
+  
+  % if interest_only:
+  - Your loan was an 'interest only' loan.
+  % endif 
+  
+  %if investment_property: 
+  - Your home was used as security for a loan used to buy an investment property.
+  % endif
+  
+  
+  
+  ####Hardship Indicators
+  *If you are experiencing financial hardship, this is another indicator that you may be dealing with a responsible lending issue.
   These factors indicate that you may be suffering from 
   % if substantial_hardship_indicator:
-    **Severe**
+    **severe**
   % endif  
-  hardship: 
-  
-  - include calculator outcome somewhere here
+  hardship:* 
   
   % if substantial_hardship_indicator:
-    **You have indicated that you would need to sell your home in order to pay off this loan. In the legislation this is a serious indicator of financial hardship. You should seek help as soon as possible**
-  % endif  
+    - You have indicated that you would need to sell your home in order to pay off this loan. In the legislation this is a serious indicator of severe financial hardship. You should seek help as soon as possible.
+  % endif    
   
+  % if poverty: 
+  - Our hardship calculator indicates that you are below the Henderson Poverty Index, this is a serious indicator that you are experiencing financial hardship. You should seek help as soon as possible.
+  % endif
+
   
-  
+  ####Next Steps
    Please reach out to UC, or a like service, to receive legal help **blah blah fix wording**
   
   It may also be useful to request from your bank a copy of the assessment required under section 129 of the *National Consumer Credit Protection Act* and to bring this with you to seek legal advice. As it is the lender's responsibility to make reasonable inquires into your circumstances, deficiencies in this assessment support the possibility that you may be experiencing a responsible lending issue.

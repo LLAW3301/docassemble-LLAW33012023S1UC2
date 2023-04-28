@@ -1,0 +1,29 @@
+  Review below your answers to the questions and whether your answer indicates a responsible lending issue.
+  
+  ** Questions about your lender **
+  
+     Question|Whether your answer indicates irresponsible lending
+  -----------|----------
+  Did your lender ask what you wanted the loan for?          | ${ asked_why } 
+  Did your lender ask about your financial situation before giving you the loan?  | ${ asked_situation }
+  Did your lender inspect your bank account statements?   | ${ statements_account }
+  Did your lender ask about your actual living expenses or obtain statements of your living expenses before giving you the loan?  | ${ actual_expenses }
+  
+
+  ** Questions about your situation at the time of the loan ** 
+  
+     Question|Whether your answer indicates irresponsible lending
+  -----------|----------
+  When you received the loan were you elderly?            | ${ elderly } 
+  When you received the loan were you suffering from an illness/disability?        | ${ illness }
+  When you received the loan were you unable to understand English?   | ${ language }
+  When you received the loan did you already have other loans you were still paying off? | ${ other_loans }
+  Was your ability to repay the loan based on raising house prices? | ${ house_prices }
+
+
+  ** Questions about your loan ** 
+  
+     Question|Whether your answer indicates irresponsible lending
+  -----------|----------
+  Was your loan an 'interest only' loan?        | ${ interest_only } 
+  Was your home used as security for a loan to buy an investment property?  | ${ investment_property }
