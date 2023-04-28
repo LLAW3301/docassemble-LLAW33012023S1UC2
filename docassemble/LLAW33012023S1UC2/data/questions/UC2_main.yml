@@ -3,7 +3,6 @@
 include:
   - UC2_threshold_questions.yml
   - UC2_directing_questions.yml
-  - UC2_assessment_questions.yml
   - UC2_seperated_questions.yml
 ---
 mandatory: true
