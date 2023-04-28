@@ -165,7 +165,7 @@ subquestion: |
   % endif
   
   
-  
+  % if poverty or substantial_hardship_indicator:
   ####Hardship Indicators
   *If you are experiencing financial hardship, this is another indicator that you may be dealing with a responsible lending issue.
   These factors indicate that you may be suffering from 
@@ -173,6 +173,7 @@ subquestion: |
     **severe**
   % endif  
   hardship:* 
+  % endif
   
   % if substantial_hardship_indicator:
     - You have indicated that you would need to sell your home in order to pay off this loan. In the legislation this is a serious indicator of severe financial hardship. You should seek help as soon as possible.
