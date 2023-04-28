@@ -1,0 +1,55 @@
+---
+# hardship calculator questions 
+question: Hardship Calculator Questions
+subquestion: | 
+  Answer these questions, your answers will then be put through a calculation model to help determine if your loan is causing you financial hardship. 
+fields: 
+  - How much is your weekly income?: weekly_income
+  - How much do you spend a week on fixed and regular expenses such as rent and food?: regular_expenses
+  - How much are your rent repayments each week?: rent_repayments
+---
+question: |
+  Would you only be able to make repayments if you sold your primary place of residence?
+field: substantial_hardship_indicator
+dropdown:
+  - No
+  - Yes
+  - Does not apply (I do not own my home)
+---
+# Questions about your lender 
+question: | 
+  This is a series of questions about your lender.
+fields: 
+  - "Did your lender ask what you wanted the loan for?": asked_why
+    datatype: noyesradio
+  - "Did your lender ask about your financial situation before giving you the loan?": asked_situation
+    datatype: noyesradio
+  - "Did your lender inspect your bank account statements?": statements_account
+    datatype: noyesradio
+  - "Did your lender ask about your actual living expenses or obtain statements of your expenses before giving you the loan?": statements_account
+    datatype: noyesradio
+---
+# Questions about your situation at the time of the loan
+question: | 
+  This is a series of questions about your situation at the time of the loan.
+fields: 
+  - "When you received the loan were you elderly?": elderly
+    datatype: yesnoradio
+  - "When you received the loan were you suffering from an illness/disability?": illness
+    datatype: yesnoradio
+  - "When you received the loan were you unable to understand English?": language
+    datatype: yesnoradio
+  - "When you received the loan did you already have other loans you were still paying off?": other_loans
+    datatype: yesnoradio
+  - "Was your ability to repay the loan based on raising house prices?": house_prices
+    datatype: yesnoradio
+---
+# Questions about your situation at the time of the loan
+question: | 
+  This is a series of questions about your loan. 
+fields: 
+  - "Was your loan an 'interest only' loan?": interest_only 
+    datatype: yesnoradio
+  - "Was your home used as a security for a loan used to buy an investment property?": investment_property 
+    datatype: yesnoradio
+---
