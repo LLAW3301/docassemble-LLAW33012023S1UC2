@@ -15,7 +15,7 @@ code: |
   weekly_money = weekly_income - regular_expenses - loan_repayments
 ---
 code: |
-  if weekly_money <= 62.70:
+  if weekly_money <= 438.9:
     poverty = True
   else:
     poverty = False
