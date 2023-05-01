@@ -29,7 +29,7 @@
        comes with colour picking software that will show you the RGB values
        for any colour you pick
     */
-    background-color: rgb(255,211,0) !important;
+    background-color: rgb(255,255,255) !important;
 }
 
 /* This sets the colour of the 'Source' link in the navbar */

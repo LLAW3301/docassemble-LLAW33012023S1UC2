@@ -5,8 +5,11 @@ include:
   - UC2_directing_questions.yml
   - UC2_seperated_questions.yml
 ---
+features:
+  css: UC2draft.css
+---
 mandatory: true
-question: Welcome
+question: Welcome <i class="fa-solid fa-hand-holding-heart"></i>
 subquestion: |
   Welcome to the Uniting Communities Consumer Credit Law Centre of South Australia's Preliminary Loan Inspector application. 
   
@@ -18,11 +21,14 @@ subquestion: |
   
   *Disclaimer*
   This application does not offer legal advice 
-  ** - insert privacy policy here - **
-  
+  ** view privacy policy here ** <i class="fa-solid fa-arrow-up-right-from-square"></i>
+pre: |
+  this is where the logo needs to go
 buttons:
   - Accept and continue: continue
+    color: success
   - Exit: exit
+    color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
 ---
 mandatory: True
