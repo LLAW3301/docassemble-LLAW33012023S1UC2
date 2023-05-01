@@ -100,7 +100,11 @@ buttons:
 event: irresponsible_lending_endpoint
 question: Possible Responsible Lending Issue
 subquestion: | 
-  It is  possible that you are dealing with a responsible lending issue. 
+  It is 
+  % if issue_type == 'irresponsible_direction1':
+  highly 
+  % endif
+  possible that you are dealing with a responsible lending issue. 
   Read the following sections to better understand your issue. 
 
 
