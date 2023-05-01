@@ -11,6 +11,7 @@ fields:
   - How much are your loan repayments each week?: loan_repayments
     datatype: currency
 ---
+#add comments on how this works, could make 428.9 as currency variable - HPI line weekly - representing henderson poverty line - so user can see how calculated
 code: |
   weekly_money = weekly_income - regular_expenses - loan_repayments
 ---
