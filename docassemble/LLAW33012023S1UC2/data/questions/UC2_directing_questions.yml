@@ -6,9 +6,9 @@ fields:
   - Please select the scenario that sounds the most like you: issue_type
     datatype: radio
     choices:
-      - Always struggled to make repayments on the loan: irresponsible_direction
-      - Only started to struggle to make repayments after an interest  only period ended: irresponsible_direction
-      - Started to struggle to make repayments after a change in circumstances that was foreseeable at the time of the loan: irresponsible_direction
+      - Always struggled to make repayments on the loan: irresponsible_direction1
+      - Only started to struggle to make repayments after an interest  only period ended: irresponsible_direction2
+      - Started to struggle to make repayments after a change in circumstances that was foreseeable at the time of the loan: irresponsible_direction3
       - Only started to struggle to make repayments due to changes of personal circumstances that were not foreseeable at the time of taking out the loan: hardship_direction
 ---
 #code: |

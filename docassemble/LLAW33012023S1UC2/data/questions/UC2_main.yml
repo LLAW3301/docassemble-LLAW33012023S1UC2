@@ -36,7 +36,7 @@ code: |
     ineligible_endpoint_3        
   elif correct_date and correct_purpose and correct_repayment_time and not correct_borrower:
     ineligible_endpoint_4
-  elif correct_date and correct_purpose and correct_repayment_time and correct_borrower and issue_type == 'irresponsible_direction': 
+  elif correct_date and correct_purpose and correct_repayment_time and correct_borrower and issue_type == 'irresponsible_direction1' or issue_type == 'irresponsible_direction2' or issue_type == 'irresponsible_direction3': 
     irresponsible_lending_endpoint
   elif correct_date and correct_purpose and correct_repayment_time and correct_borrower and issue_type == 'hardship_direction': 
     hardship_endpoint
@@ -100,7 +100,11 @@ buttons:
 event: irresponsible_lending_endpoint
 question: Possible Responsible Lending Issue
 subquestion: | 
-  It it possible that you are dealing with a responsible lending issue. 
+  It is 
+  % if irresponsible_direction1
+  highly
+  % endif
+  possible that you are dealing with a responsible lending issue. 
   Read the following sections to better understand your issue. 
 
 
