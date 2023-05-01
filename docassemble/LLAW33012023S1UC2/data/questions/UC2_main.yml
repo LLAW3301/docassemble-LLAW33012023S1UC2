@@ -23,7 +23,7 @@ subquestion: |
   This application does not offer legal advice 
   ** view privacy policy here ** <i class="fa-solid fa-arrow-up-right-from-square"></i>
 pre: |
-  this is where the logo needs to go
+  [FILE uniting-communities-logo.png]
 buttons:
   - Accept and continue: continue
     color: success
