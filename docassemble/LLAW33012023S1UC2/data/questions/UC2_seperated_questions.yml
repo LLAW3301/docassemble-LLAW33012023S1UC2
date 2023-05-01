@@ -11,17 +11,18 @@ fields:
   - How much are your loan repayments each week?: loan_repayments
     datatype: currency
 ---
-#add comments on how this works, could make 428.9 as currency variable - HPI line weekly - representing henderson poverty line - so user can see how calculated
 code: |
   weekly_money = weekly_income - regular_expenses - loan_repayments
 ---
+# $438.90 is 7x the daily HPI of $62.70, therefore weekly money should be more than this to be over the HPI line
 code: |
   if weekly_money <= 438.9:
     poverty = True
   else:
     poverty = False
 ---
-question: |
+question: Substantial Hardship Indicator
+subquestion: |
   Would you only be able to make repayments if you sold your primary place of residence? 
 yesno: substantial_hardship_indicator
 under: |
