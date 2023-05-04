@@ -46,7 +46,7 @@ def find_package_data(where='.', package='', exclude=standard_exclude, exclude_d
 setup(name='docassemble.LLAW33012023S1UC2',
       version='0.0.1',
       description=('A docassemble extension.'),
-      long_description='# docassemble.LLAW33012023S1UC2\r\n\r\nA docassemble extension.\r\n\r\n## Author\r\n\r\nAllison Mason, maso0192@flinders.edu.au\r\nBianca Elliott, elli0528@flinders.edu.au\r\nPhoebe Curyer, cury0011@flinders.edu.au\r\n\r\n',
+      long_description="# docassemble.LLAW33012023S1UC2\r\n\r\nA docassemble extension.\r\n\r\n## Author\r\n\r\nAllison Mason, maso0192@flinders.edu.au\r\nBianca Elliott, elli0528@flinders.edu.au\r\nPhoebe Curyer, cury0011@flinders.edu.au\r\nLily Greaves, grea0081@flinders.edu.au\r\nMatthew Dell'Antonio, dell0095@flinders.edu.au\r\n",
       long_description_content_type='text/markdown',
       author='Allison Mason',
       author_email='maso0192@flinders.edu.au',
