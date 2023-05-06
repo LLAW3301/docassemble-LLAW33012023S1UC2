@@ -1,0 +1,43 @@
+# NOTE that I have only done the core definition coding, and some of it may need to be reworded later as drafting continues! Please note that as agreed I will not integrate or modify the other coding for the sake of docassemble delicacy! - Matt :)
+---
+auto terms:
+  Personal Purpose: |
+    Money that is used for large purchases for an individual such as a house, car, or other expensive purchase.
+  Business Purpose: |
+    Money that is put towards business exclusive activities like paying wages, buying stock, and paying invoices counts as business purposes.
+  Licensed Credit Lender: |
+    A person/company permitted by the law to lend money to others like banks, credit unions, and online lenders.
+  Interest only period: |
+    A scheduled space of time where you only pay the interest on a loan and not the original amount of it.
+  Change in personal circumstances: |
+    Any changes that can significantly affect your living and costs like:
+    - Moving houses
+    - A serious health issue or injury.
+    - Changes in income or employment.
+    - Marital changes such as divorce.
+  Statement of expenses : |
+    Can include documents like bills, rental agreements, and mortgage agreements.
+  Illness/disability: |
+    This must be a factor that impacts your ability to earn an income.
+  Investment property : |
+    A property someone owns and uses to generate income, not to live in.
+  Financial hardship : |
+    When a loan stops someone from paying essential living costs (rent, bills, food, etc.).
+  Unsuitable : |
+    A loan that is hard to pay off from the beginning of a loaning period without signifcant change.
+  Financial situation : |
+    Refers to the situation you financially find yourself in, such as your financial stability, income, debts, and all factors that make up the cirumstances your money is committed to.
+  Bank statements : |
+    A document that summarises what money goes in and out of a bank account.
+  Security for a Loan : |
+    When something like a house is used as secuirty for a loan it is promsied to someone else that you owe money to. In the event that you cannot repay the loan, this 'security' is taken instead.
+  Henderson Poverty Index: |
+    Also known as the HPI, the Index measures how much money a family needs for basic living expenses such as food, living arrangements, and medical costs. We use this tool to consider the level of financial difficulty you are having to better understand your situation.
+ # The wording below will probably be changed - but since we need a weekly basis of payments I figure we put this in just in case
+  Payments you have to make on a Weekly Basis: |
+    If your payment is not weekly, the following calculation is suggested:
+    Fortnightly: Divide by 2
+    Monthly: Divide by 4
+    Quarterly: Divide by 13
+    Yearly: Divide by 52
+---
