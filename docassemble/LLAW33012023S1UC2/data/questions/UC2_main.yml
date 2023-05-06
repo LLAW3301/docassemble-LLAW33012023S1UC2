@@ -110,9 +110,11 @@ question: Possible Responsible Lending Issue
 subquestion: | 
   It is 
   % if issue_type == 'irresponsible_direction1':
-  highly
+  **likely**
+  % elif issue_type == 'irresponsible_direction2' or issue_type == 'irresponsible_direction3':
+  **possible**
   % endif
-  possible that you are dealing with a responsible lending issue. 
+  that you are dealing with a responsible lending issue. 
   Read the following sections to better understand your issue. 
 
 
@@ -140,9 +142,12 @@ subquestion: |
 
 
 
-  % if elderly or illness or language or other_loans or house_prices:
+  % if (elderly or illness or language or other_loans or house_prices) and (asked_why or asked_situation or statements_account or actual_expenses):
   ####Your Situation at the Time of Receiving the Loan
   *When your lender does this investigation, there are some factors they must consider that may indicate that a loan is not-suitable. You indicated that these factors were true for you:*
+  % elif (elderly or illness or language or other_loans or house_prices) and not (asked_why or asked_situation or statements_account or actual_expenses): 
+  ####Your Situation at the Time of Receiving the Loan
+  *It is your lenders responsibility to investigate your circumstances before providing you with a loan, there are some factors they must consider that may indicate that a loan is not-suitable. You indicated that these factors were true for you:*
   % endif
   
   % if elderly:
@@ -165,7 +170,7 @@ subquestion: |
 
   % if interest_only or investment_property:
   ####Nature of your Loan
-  *The nature of some loans may also indicate a responsible lending issue. You indicated that these factors are relevant for you:*
+  *The nature of some loans may indicate a responsible lending issue. You indicated that these factors are relevant for you:*
   % endif
   
   % if interest_only:
@@ -179,20 +184,20 @@ subquestion: |
   
   % if poverty or substantial_hardship_indicator:
   ####Hardship Indicators
-  *If you are experiencing financial hardship, this is another indicator that you may be dealing with a responsible lending issue.
+  *Financial hardship is an indicator that you may be dealing with a responsible lending issue.
   These factors indicate that you may be suffering from 
   % if substantial_hardship_indicator:
-    **severe**
+  substantial
   % endif  
   hardship:* 
   % endif
   
   % if substantial_hardship_indicator:
-    - You have indicated that you would need to sell your home in order to pay off this loan. In the legislation this is a serious indicator of severe financial hardship. You should seek help as soon as possible.
+    - You have indicated that you would need to sell your home in order to pay off this loan. In the legislation this is a serious indicator of substantial financial hardship. You should seek help as soon as possible.
   % endif    
   
   % if poverty: 
-  - Our hardship calculator indicates that you are below the Henderson Poverty Index, this is a serious indicator that you are experiencing financial hardship. You should seek help as soon as possible.
+  - Our hardship calculator indicates that you are below the Henderson Poverty Index, this is an indicator that you are experiencing financial hardship. You should seek help as soon as possible.
   % endif
 
   
