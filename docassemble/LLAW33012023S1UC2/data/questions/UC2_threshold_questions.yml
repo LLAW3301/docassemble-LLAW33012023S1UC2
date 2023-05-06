@@ -1,4 +1,7 @@
 ---
+include: 
+  - UC2_definitions.yml
+---
 # Date loan is taken out
 question: Date of loan <i class="fa-solid fa-calendar-days"></i>
 subquestion: | 
@@ -17,8 +20,11 @@ fields:
 question: Length of repayment <i class="fa-solid fa-hourglass-start"></i>
 subquestion: | 
 fields: 
-  - Do you have more than 62 days to repay the loan after taking it out?: correct_repayment_time
+  - Do you have more than {2 months} to repay the loan after taking it out?: correct_repayment_time
     datatype: yesnoradio
+terms: 
+  2 months: | 
+    2 months is equivalent to 62 days.
 ---
 # The correct borrower
 question: Where the loan came from <i class="fa-solid fa-piggy-bank"></i>
