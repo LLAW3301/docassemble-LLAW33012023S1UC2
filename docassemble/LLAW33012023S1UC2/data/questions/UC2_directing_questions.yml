@@ -1,6 +1,6 @@
 ---
 # to determine which endpoint - hardship or irresponsible lending
-question: Repaying your loan
+question: Repaying your loan <i class="fa-solid fa-money-check-dollar"></i>
 subquestion: | 
 fields: 
   - Please select the scenario that sounds the most like you: issue_type
