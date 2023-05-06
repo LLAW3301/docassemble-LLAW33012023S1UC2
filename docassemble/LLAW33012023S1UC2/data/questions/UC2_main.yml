@@ -63,7 +63,9 @@ subquestion: |
 
 buttons:
   - Restart the application: restart
+    color: success
   - Exit: exit
+    color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
 ---
 # Failed purpose threshold
@@ -76,7 +78,9 @@ subquestion: |
   
 buttons:
   - Restart the application: restart
+    color: success
   - Exit: exit
+    color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
 ---
 # Failed repayment time threshold
@@ -87,7 +91,9 @@ subquestion: |
   
 buttons:
   - Restart the application: restart
+    color: success
   - Exit: exit
+    color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
 ---
 # Failed borrower threshold
@@ -98,7 +104,9 @@ subquestion: |
 
 buttons:
   - Restart the application: restart
+    color: success
   - Exit: exit
+    color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
 ---
 event: hardship_endpoint
@@ -116,7 +124,9 @@ subquestion: |
   
 buttons:
   - Restart the application: restart
+    color: success
   - Exit: exit
+    color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
 ---
 event: irresponsible_lending_endpoint
@@ -230,6 +240,8 @@ subquestion: |
 
 buttons:
   - Restart the application: restart
+    color: success
   - Exit: exit
+    color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
 ---
