@@ -200,7 +200,7 @@ subquestion: |
 
   % if interest_only or investment_property:
   ####Nature of your Loan
-  *The nature of some loans make them more likely to be unsuitabl. 
+  *The nature of some loans make them more likely to be unsuitable. 
   
   You indicated that these factors are relevant for you:*
   % endif
