@@ -1,15 +1,21 @@
 ---
+include: 
+  - UC2_definitions.yml
+## defintions are not showing up on these questions - NEED HELP
+---
 # to determine which endpoint - hardship or irresponsible lending
-question: Repaying your loan
+question: Repaying your loan <i class="fa-solid fa-money-check-dollar"></i>
 subquestion: | 
 fields: 
-  - Please select the scenario that sounds the most like you: issue_type
+  - Please select the option that sounds the most like you: issue_type
     datatype: radio
     choices:
-      - Always struggled to make repayments on the loan: irresponsible_direction
-      - Only started to struggle to make repayments after an interest  only period ended: irresponsible_direction
-      - Started to struggle to make repayments after a change in circumstances that was foreseeable at the time of the loan: irresponsible_direction
-      - Only started to struggle to make repayments due to changes of personal circumstances that were not foreseeable at the time of taking out the loan: hardship_direction
+      - It has always been hard to make the payments on my loan.: irresponsible_direction1
+      - It only became hard to make payments on my loan after the interest only period finished: irresponsible_direction2
+      - It became hard to make payments on my loan after something happened that was foreseeable at the time of the loan.: irresponsible_direction3
+        help: |
+          Something is foreseeable if it was expected. For example, if you were pregnant it was foreseeable you would have to pay school fees in a few years. Another example, if you had a long-term disease, it was foreseeable you may stop being able to work.
+      - It became hard to make my payments because something unexpected happened, changing my personal circumstances.: hardship_direction
 ---
 #code: |
  # if issue_type == 'always' or 'interest_only' or 'foreseeable':

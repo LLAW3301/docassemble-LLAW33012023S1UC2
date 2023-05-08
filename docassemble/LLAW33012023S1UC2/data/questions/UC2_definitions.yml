@@ -1,0 +1,54 @@
+# NOTE that I have only done the core definition coding, and some of it may need to be reworded later as drafting continues! Please note that as agreed I will not integrate or modify the other coding for the sake of docassemble delicacy! - Matt :)
+---
+auto terms:
+  Personal Purpose: |
+    Money that is used for large purchases for an individual such as a house, car, or other expensive purchase.
+  Business Purpose: |
+    Money that is put towards business exclusive activities like paying wages, buying stock, and paying invoices counts as business purposes.
+  Licensed Credit Lender: |
+    A person/company permitted by the law to lend money to others like banks, credit unions, mortgage brokers, and online lenders.
+  Interest only period: |
+    A scheduled space of time where you only pay the interest on a loan and not the original amount of it.
+  interest only period: |  
+    A scheduled space of time where you only pay the interest on a loan and not the original amount of it.
+  interest only: |
+    An interest only loan is a loan which contains an interest only period, which is a scheduled space of time where you only pay the interest on a loan and not the original amount of it.
+  changing my personal circumstances: |
+    Any changes that can significantly affect your living and costs like:
+    - Moving houses
+    - A serious health issue or injury.
+    - Changes in income or employment.
+    - Marital changes such as divorce.
+  Statement of expenses : |
+    Can include documents like bills, rental agreements, and mortgage agreements.
+  ##Illness/disability: |
+  ##  This must be a factor that impacts your ability to earn an income.
+  ## commentening this out for now - the disability question is about if someone is vulnerable - amadio style, is the contract unconsionable kind of thing, so I don't think this definition is relevant ?
+  Investment property : |
+    A property someone owns and uses to generate income, not to live in.
+  Financial hardship : |
+    When a loan stops someone from paying essential living costs (rent, bills, food, etc.).
+  ##Unsuitable : |
+  ##  A loan that is hard to pay off from the beginning of a loaning period without signifcant change.
+  ##also commenting this one out since it doesn't make sense in every case, and since it puts the definition on every case - might need to add more words to specify exactly where you want to use this - also I don't know if the definition of unsuitable is super spot on, maybe reword
+  Financial situation : |
+    Refers to the situation you financially find yourself in, such as your financial stability, income, debts, and all factors that make up the cirumstances your money is committed to.
+  Bank statements : |
+    A document that summarises what money goes in and out of a bank account.
+  Security for a Loan : |
+    When something like a house is used as secuirty for a loan it is promsied to someone else that you owe money to. In the event that you cannot repay the loan, this 'security' is taken instead.
+  Henderson Poverty Index: |
+    Also known as the HPI, the Index measures how much money a person needs for basic living expenses such as food, living arrangements, and medical costs. We use this tool to consider the level of financial difficulty you are having to better understand your situation.
+ # The wording below will probably be changed - but since we need a weekly basis of payments I figure we put this in just in case
+  weekly basis: |
+    If your payment is not weekly, the following calculation is suggested:
+    / If you make repayments fortnightly: Divide by 2 / If you make repayments monthly: Divide by 4 / If you make repayments quarterly: Divide by 13 / If you make repayments yearly: Divide by 52
+  Responsible Lending Issue: | 
+    When receiving a loan, the company giving you the money must make sure that the loan is not unsuitable for you. If they gave you the loan without making sure it was not unsuitable, you may be entitled to be put back into the financial situation you were in before receiving the loan.
+  foreseeable at the time of the loan: |
+    These are things that your bank should have known you were likely to deal with during the course of your loan repayments if they investigated your life. For example, if you were pregnant when you received the loan, it was foreseeable that you would have to pay school fees in the next ten years.
+  work out: |
+    This calculation model uses the Henderson Poverty Index to calculate whether you are living below the poverty line due to your loan repayments.
+  make in a week: |
+    If you do not make the same amount every week perform an average calculation. Take the money you make in a year and divide it by 52.
+---
