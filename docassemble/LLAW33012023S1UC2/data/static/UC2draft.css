@@ -45,30 +45,30 @@
         'alpha' or transaparency value.  Here we are saying
         to set the transparency to 30%
     */
-    background-color: rgba(126,199,84,0.9); 
+    background-color: rgba(126,199,84); 
     #green
 }
 /* Sets properties for when hovering over a menu item in the 
    drop-down menu */
 .dropdown-item:hover{
-    background-color: rgba(126,199,84,0.9);
+    background-color: rgba(126,199,84);
 }
 
 /* Sets the appearnce for the 'Continue' button... */
 .btn-primary{
   color: rgb(255,255,255);
-  background-color: rgba(126,199,84,0.9);
+  background-color: rgba(126,199,84);
   border-color: rgb(255,255,255);
 }
 /* ...and when hovering over it */
 .btn-primary:hover{
   color: rgb(0,0,0);
-  background-color: rgba(126,199,84,0.9);
+  background-color: rgba(126,199,84);
   border-color: rgb(0,0,0);
 }
 .btn-primary:active{
   color: rgb((0,0,0);
-  background-color: rgba(126,199,84,0.9);
+  background-color: rgba(126,199,84);
   border-color: rgba(255,255,255);
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7)
 }

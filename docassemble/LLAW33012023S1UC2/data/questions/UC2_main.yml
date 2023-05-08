@@ -59,6 +59,7 @@ code: |
     hardship_endpoint
   else:
     hardship_endpoint
+    
 ---
 # Failed date threshold
 event: ineligible_endpoint_1
