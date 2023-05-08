@@ -37,7 +37,6 @@ subquestion: |
   [View privacy policy here](https://www.unitingcommunities.org/about-us/privacy-policy) <i class="fa-solid fa-arrow-up-right-from-square"></i>
 buttons:
   - Accept and continue: continue
-    css class: btn-primary
   - Exit: exit
     color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
@@ -71,7 +70,7 @@ subquestion: |
 
 buttons:
   - Restart the application: restart
-    color: success
+    color: dark
   - Exit: exit
     color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
@@ -86,7 +85,7 @@ subquestion: |
   
 buttons:
   - Restart the application: restart
-    color: success
+    color: dark
   - Exit: exit
     color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
@@ -101,7 +100,7 @@ subquestion: |
   
 buttons:
   - Restart the application: restart
-    color: success
+    color: dark
   - Exit: exit
     color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
@@ -116,7 +115,7 @@ subquestion: |
 
 buttons:
   - Restart the application: restart
-    color: success
+    color: dark
   - Exit: exit
     color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
@@ -136,7 +135,7 @@ subquestion: |
   
 buttons:
   - Restart the application: restart
-    color: success
+    color: dark
   - Exit: exit
     color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
@@ -256,7 +255,7 @@ subquestion: |
 
 buttons:
   - Restart the application: restart
-    color: success
+    color: dark
   - Exit: exit
     color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
