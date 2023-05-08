@@ -23,7 +23,7 @@ subquestion: |
   Welcome to the Uniting Communities Consumer Credit Law Centre of South Australia’s **Preliminary Loan Inspector** application.
   
   
-  This app is for people in Australia who are struggling to repay a loan - if that is not you, please press exit.
+  This app is for people in Australia who are struggling to repay a loan. If that is not you, please press **exit**.
   
   
   You will be asked several questions to help see if you may be dealing with a Responsible Lending Issue.
@@ -33,6 +33,7 @@ subquestion: |
   
   *This application does not offer legal advice and is only a tool to suggest what type of loan issue you may be dealing with to improve your understanding of your legal rights.*
   
+
   [view privacy policy here](https://www.unitingcommunities.org/about-us/privacy-policy) <i class="fa-solid fa-arrow-up-right-from-square"></i>
 buttons:
   - Accept and continue: continue
@@ -156,9 +157,9 @@ subquestion: |
 
   % if asked_why or asked_situation or statements_account or actual_expenses:
   ####Lender's Responsibilities
-  *It is your lender's responsibility to look into your financial situation before giving you a loan. 
+  *It is your lender's responsibility to look into your financial situation before giving you a loan.* 
   
-  Based on what you have told us, these things indicate that your lender did not meet this obligation:*
+  *Based on what you have told us, these things indicate that your lender did not meet this obligation:*
   % endif
   
   % if asked_why:
@@ -181,9 +182,9 @@ subquestion: |
 
   % if (elderly or illness or language or other_loans or house_prices):
   ####Your Situation at the Time of Receiving the Loan
-  *There are certain factors that may indicate you were in a vulnerable or unsuitable position at the time of getting your loan. While these factors don't immediately mean you should not have been given a loan, they are important to consider.  
+  *There are certain factors that may indicate you were in a vulnerable or unsuitable position at the time of getting your loan. While these factors don't immediately mean you should not have been given a loan, they are important to consider.*  
   
-  Based on what you have told us, these factors are relevant here:*
+  *Based on what you have told us, these factors are relevant here:*
   % endif
   
   % if elderly:
@@ -206,9 +207,9 @@ subquestion: |
 
   % if interest_only or investment_property:
   ####Nature of your Loan
-  *The nature of some loans make them more likely to be unsuitable. 
+  *The nature of some loans make them more likely to be unsuitable.* 
   
-  You indicated that these factors are relevant for you:*
+  *You indicated that these factors are relevant for you:*
   % endif
   
   % if interest_only:
@@ -222,13 +223,13 @@ subquestion: |
   
   % if poverty or substantial_hardship_indicator:
   ####Hardship Indicators
-  *Financial hardship is also an indicator that you may be dealing with a responsible lending issue.
+  *Financial hardship is also an indicator that you may be dealing with a responsible lending issue.*
   
-  Based on what you told us, these factors indicate that you may be suffering from 
+  *Based on what you told us, these factors indicate that you may be suffering from* 
   % if substantial_hardship_indicator:
-  substantial
+  *substantial*
   % endif  
-  hardship:* 
+  *hardship:* 
   % endif
   
   % if substantial_hardship_indicator:
@@ -251,7 +252,7 @@ subquestion: |
   [The Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit) may be able to provide help if you are located in South Australia. 
   
   
-  It may be useful to ask your lender for a copy of a paper called "section 129 assessment" and take this with you to get advice from a lawyer. This form will provide information about the assessment they undertook before giving you the loan and help your lawyer to make a case that you are dealing with a responsible lending issue.
+  It may be useful to ask your lender for a copy of a paper called "Section 129 Assessment" and take this with you to get advice from a lawyer. This form will provide information about the assessment they undertook before giving you the loan and help your lawyer to make a case that you are dealing with a responsible lending issue.
 
 buttons:
   - Restart the application: restart

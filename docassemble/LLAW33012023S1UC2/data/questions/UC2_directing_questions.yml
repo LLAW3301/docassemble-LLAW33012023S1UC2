@@ -12,7 +12,9 @@ fields:
     choices:
       - It has always been hard to make the payments on my loan.: irresponsible_direction1
       - It only became hard to make payments on my loan after the interest only period finished: irresponsible_direction2
-      - It only became difficult to make payments on my loan due to a change in circumstances that was foreseeable at the time of the loan.: irresponsible_direction3
+      - It became hard to make payments on my loan after something happened that was foreseeable at the time of the loan.: irresponsible_direction3
+        help: |
+          Something is foreseeable if it was expected. For example, if you were pregnant it was foreseeable you would have to pay school fees in a few years. Another example, if you had a long-term disease, it was foreseeable you may stop being able to work.
       - It became hard to make my payments because something unexpected happened, changing my personal circumstances.: hardship_direction
 ---
 #code: |

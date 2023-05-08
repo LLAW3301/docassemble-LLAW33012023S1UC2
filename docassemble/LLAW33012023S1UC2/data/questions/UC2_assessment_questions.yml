@@ -59,7 +59,7 @@ fields:
     datatype: noyesradio
   - "At the time of getting this loan, did you have any other loans you were still paying off?": other_loans
     datatype: yesnoradio
-  - "Was your ability to repay the loan based on raising house prices?": house_prices
+  - "Was your ability to repay the loan dependent on rising house prices?": house_prices
     datatype: yesnoradio
 ---
 # Questions about your loan
