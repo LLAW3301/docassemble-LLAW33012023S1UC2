@@ -45,40 +45,48 @@
         'alpha' or transaparency value.  Here we are saying
         to set the transparency to 30%
     */
-    background-color: rgba(255,211,0,0.3);
+    background-color: rgba(126,199,84,0.9); 
+    #green
 }
 /* Sets properties for when hovering over a menu item in the 
    drop-down menu */
 .dropdown-item:hover{
-    background-color: rgba(255,211,0,0.5);
+    background-color: rgba(126,199,84,0.9);
 }
 
 /* Sets the appearnce for the 'Continue' button... */
 .btn-primary{
   color: rgb(255,255,255);
-  background-color: rgb(0, 45, 97);
-  border-color: rgb(0,0,0);
+  background-color: rgba(126,199,84,0.9);
+  border-color: rgb(255,255,255);
 }
 /* ...and when hovering over it */
 .btn-primary:hover{
   color: rgb(0,0,0);
-  background-color: rgba(151,201,255,0.3);
+  background-color: rgba(126,199,84,0.9);
   border-color: rgb(0,0,0);
 }
-
-/* You can make your own styles from scratch if you wish.  There's a lot
-  you can do with styles - much more than setting font sizes and colours.
-  Here's a brief example.  Feel free to explore this further.  Search online
-  or refer to the Mozilla link at the top of this file
-*/
-.MJFheader{
-    /* Set the colour to red */
-    color: rgb(255,255,255);
-    /* Make the font bigger.  This increases the font size by 20% */
-    font-size: 1.2em;
-    /* Make it bold */
-    font-weight: bolder;
-    /* Add a text shadow */
-    /* check out text shadows here: https://cssreference.io/property/text-shadow/ */
-    text-shadow: 2px 4px 10px tomato;
+.btn-primary:active{
+  color: rgb((0,0,0);
+  background-color: rgba(126,199,84,0.9);
+  border-color: rgba(255,255,255);
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7)
+}
+.btn-primary:focus{
+  color: rgb((0,0,0);
+  background-color: rgba(126,199,84,0.9);
+  border-color: rgba(255,255,255);
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7)
+}
+.btn-primary:active:focus{
+  color: rgb((0,0,0);
+  background-color: rgba(126,199,84,0.9);
+  border-color: rgba(255,255,255);
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7)
+}
+.select-input {
+  color: rgb((0,0,0);
+  background-color: rgba(126,199,84,0.9);
+  border-color: rgba(255,255,255);
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7)
 }

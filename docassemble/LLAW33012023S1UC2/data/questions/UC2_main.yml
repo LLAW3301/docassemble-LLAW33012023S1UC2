@@ -9,6 +9,14 @@ include:
 features:
   css: UC2draft.css
 ---
+objects:
+  - MJFlogo: DAStaticFile.using(filename='uniting-communities-logo.png')
+---
+initial: True
+code: |
+  MJFlogo_string= '<div class="media"><img src="{}" class="mr-3" height="50"><div class="media-body"></div></div>'.format(MJFlogo.url_for())
+  set_parts(logo=MJFlogo_string)
+---
 mandatory: true
 question: Welcome <i class="fa-solid fa-hand-holding-heart"></i>
 subquestion: |
@@ -25,12 +33,11 @@ subquestion: |
   
   *This application does not offer legal advice and is only a tool to suggest what type of loan issue you may be dealing with to improve your understanding of your legal rights.*
   
-  [View privacy policy here](https://www.unitingcommunities.org/about-us/privacy-policy) <i class="fa-solid fa-arrow-up-right-from-square"></i>
-pre: |
-  [FILE uniting-communities-logo.png]
+
+  [view privacy policy here](https://www.unitingcommunities.org/about-us/privacy-policy) <i class="fa-solid fa-arrow-up-right-from-square"></i>
 buttons:
   - Accept and continue: continue
-    color: success
+    css class: btn-primary
   - Exit: exit
     color: light
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
