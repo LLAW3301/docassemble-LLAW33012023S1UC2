@@ -38,10 +38,10 @@ auto terms:
   Security for a Loan : |
     When something like a house is used as secuirty for a loan it is promsied to someone else that you owe money to. In the event that you cannot repay the loan, this 'security' is taken instead.
   Henderson Poverty Index: |
-    Also known as the HPI, the Index measures how much money a person needs for basic living expenses such as food, living arrangements, and medical costs. We use this tool to consider the level of financial difficulty you are having to better understand your situation.
+    The index is developed by the University of Melbourne and sets out how much money a person needs each week to not be in poverty. It is updated every quarter. The most recent figure is $611.27 (March, 2022). 
  # The wording below will probably be changed - but since we need a weekly basis of payments I figure we put this in just in case
-  weekly basis: |
-    If your payment is not weekly, the following calculation is suggested:
+  weekly income: |
+    This is after tax is withheld. If your payment is not weekly, the following calculation is suggested:
     / If you make repayments fortnightly: Divide by 2 / If you make repayments monthly: Divide by 4 / If you make repayments quarterly: Divide by 13 / If you make repayments yearly: Divide by 52
   Responsible Lending Issue: | 
     When receiving a loan, the company giving you the money must make sure that the loan is not unsuitable for you. If they gave you the loan without making sure it was not unsuitable, you may be entitled to be put back into the financial situation you were in before receiving the loan.
@@ -51,4 +51,8 @@ auto terms:
     This calculation model uses the Henderson Poverty Index to calculate whether you are living below the poverty line due to your loan repayments.
   make in a week: |
     If you do not make the same amount every week perform an average calculation. Take the money you make in a year and divide it by 52.
+  preliminary assessment: | 
+    If you took out your loan in the past seven years your lender must provide you with a free copy of the preliminary assessment they conducted when deciding whether to provide you with your loan. 
+  hardship calculator: | 
+    income - expenses - loan repayments = money left to live on. If the money you have left to live on is less than the Henderson Poverty Index then you are experiencing financial hardship. 
 ---

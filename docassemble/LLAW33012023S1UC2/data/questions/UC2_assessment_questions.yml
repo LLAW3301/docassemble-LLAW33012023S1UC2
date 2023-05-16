@@ -5,11 +5,11 @@ include:
 # hardship calculator questions 
 question: Hardship Calculator Questions
 subquestion: | 
-  The following questions will help us to work out if the payments you must make towards your loan are putting you in Financial Hardship.
+  Your answers to these questions are put into a hardship calculator to see if your loan repayments put you below the Henderson Poverty Indicator.
 fields: 
-  - How much money do you make in a week?: weekly_income
+  - What is your weekly income?: weekly_income
     datatype: currency
-  - How much money do you spend on things like rent, food or other things you require to live each week?: regular_expenses
+  - How much money do you spend on housing each week?: regular_expenses
     datatype: currency
   - How much are the payments you are expected to make towards your loan on a weekly basis?: loan_repayments
     datatype: currency
@@ -17,19 +17,27 @@ fields:
 code: |
   weekly_money = weekly_income - regular_expenses - loan_repayments
 ---
-# $438.90 is 7x the daily HPI of $62.70, therefore weekly money should be more than this to be over the HPI line
+# $611.27 is the weekly HPI for a single adult inclusive of housing in March 2022.
 code: |
-  if weekly_money <= 438.9:
+  if weekly_money <= 611.27:
     poverty = True
   else:
     poverty = False
 ---
-question: Substantial Hardship Indicator
-subquestion: |
-  To start being able to meet your repayments, would you need to sell the place you live?
-yesno: substantial_hardship_indicator
-under: |
-  If you do not own your own home, select 'no'
+question: Substantial Hardship Indicators
+subquestion: | 
+  Under the law, these factors indicate **substantial** hardship.
+fields: 
+  - "To make your repayments, would you need to sell the place you live?": substantial_hardship_indicator
+    datatype: yesnoradio
+    help: |
+          If you do not own your own home, select 'No'.
+# National Credit Act s 118(2)(a) and s 118(3) and s 131(3) 
+
+  - "At the time of getting this loan, did you have any other loans you were still paying off?": other_loans
+    datatype: yesnoradio
+# National Credit Act s 131(3A) and s 133(3A) - if it is a small amount credit contract, and at time of applyig still in debt to other loans, then presumed that the consumer could only comply with substantial hardship unless contrary is proved 
+
 ---
 # Questions about your lender 
 question: | 
@@ -37,15 +45,19 @@ question: |
 fields: 
   - "Did your lender ask what you wanted the loan for?": asked_why
     datatype: noyesradio
+# National Credit Act s 117(1)(a) and s 130(1)(a) 
     
   - "Did your lender ask about your financial situation before giving you the loan?": asked_situation
     datatype: noyesradio
+# National Credit Act s 117(1)(b) and s 130(1)(b) 
     
   - "Did your lender inspect your bank account statements?": statements_account
     datatype: noyesradio
+# National Credit Act s 117(1)(c) and s 130(1)(d)
     
   - "Did your lender ask about your actual living expenses or obtain statements of your expenses before giving you the loan?": actual_expenses
     datatype: noyesradio
+# National Credit Act s 117(1)(c) and s 130(1)(d)
 ---
 # Questions about your situation at the time of the loan
 question: | 
@@ -57,8 +69,6 @@ fields:
     datatype: yesnoradio
   - "At the time of getting your loan could you understand English?": language
     datatype: noyesradio
-  - "At the time of getting this loan, did you have any other loans you were still paying off?": other_loans
-    datatype: yesnoradio
   - "Was your ability to repay the loan dependent on rising house prices?": house_prices
     datatype: yesnoradio
 ---
