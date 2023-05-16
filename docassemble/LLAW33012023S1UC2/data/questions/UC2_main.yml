@@ -20,27 +20,28 @@ code: |
 mandatory: true
 question: Welcome <i class="fa-solid fa-hand-holding-heart"></i>
 subquestion: |
-  Welcome to the Uniting Communities Consumer Credit Law Centre of South Australia’s **Preliminary Loan Inspector** application.
+  Welcome to the Consumer Credit Law Centre of South Australia’s **Preliminary Loan Inspector** application.
   
   
-  This app is for people in Australia who are struggling to repay a loan. If that is not you, please press **exit**.
+  This app is for people in Australia who are struggling to repay a loan. If that is not you, please press **Exit**.
   
   
   You will be asked several questions to help see if you may be dealing with a Responsible Lending Issue.
-
   
+buttons:
+  - Help me with my loan: continue
+  - Exit: exit
+    color: light
+    url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
+    
+under: |   
   **Disclaimer**
   
   *This application does not offer legal advice and is only a tool to suggest what type of loan issue you may be dealing with to improve your understanding of your legal rights.*
   
 
   [View privacy policy here](https://www.unitingcommunities.org/about-us/privacy-policy) <i class="fa-solid fa-arrow-up-right-from-square"></i>
-buttons:
-  - Accept and continue: continue
-  - Exit: exit
-    color: light
-    url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
-    
+
 ---
 mandatory: True
 code: |
@@ -63,12 +64,11 @@ code: |
 ---
 # Failed date threshold
 event: ineligible_endpoint_1
-question: Your Loan Falls Outside The Scope of This Application
+question: This app cannot consider loans before the 1st of July 2010. 
 subquestion: |
-  Apologies, loans taken out before the 1st of July 2010 are beyond the scope of this application. 
+  Please reach out to Uniting Commuities for [further advice](https://www.unitingcommunities.org/service/legal-services/consumer-credit), as your loan is covered by different laws than this application. 
   
-  This does not mean you cannot seek help, but the law that applies to this loan is different. Please reach out for [further advice](https://www.unitingcommunities.org/service/legal-services/consumer-credit). 
-
+  
 buttons:
   - Restart the application: restart
     color: dark
@@ -78,11 +78,10 @@ buttons:
 ---
 # Failed purpose threshold
 event: ineligible_endpoint_2
-question: Your Loan Falls Outside The Scope of This Application
+question: This app can only consider personal loans.
 subquestion: |
-  Apologies, this tool can only consider loans taken for personal purposes. 
-  If you have taken out a business loan, it is suggested that you seek help from another business trained to advise on this. **GOING TO PUT A LINK IN BUT NEED A RESPONSE FROM STEPHANIE**
-
+  Help for business loans can be sought from a business like **name** [here](insert link here).
+  
   
 buttons:
   - Restart the application: restart
@@ -93,11 +92,10 @@ buttons:
 ---
 # Failed repayment time threshold
 event: ineligible_endpoint_3
-question: Your Loan Falls Outside The Scope of This Application
+question: This app does not cover loans with less than 62 days to repay.
 subquestion: |
-  Apologies, this app is only able to provides support for loans with a repayment time longer than 2 months. 
+  Please reach out to Uniting Commuities for [further advice](https://www.unitingcommunities.org/service/legal-services/consumer-credit), as your loan is covered by different laws than this application. 
   
-  This does not mean you cannot seek help, but the law that applies to this loan is different. Please reach out for [further advice](https://www.unitingcommunities.org/service/legal-services/consumer-credit). 
   
 buttons:
   - Restart the application: restart
@@ -108,11 +106,9 @@ buttons:
 ---
 # Failed borrower threshold
 event: ineligible_endpoint_4
-question: Your Loan Falls Outside The Scope of This Application
+question: This app only covers loans from licensed credit lenders. 
 subquestion: |
-  Apologies, this app only applies to loans borrowed from licensed credit lenders. 
-  
-  This does not mean you cannot seek help, but the law that applies to this loan is different. Please reach out for [further advice](https://www.unitingcommunities.org/service/legal-services/consumer-credit). 
+  Please reach out to Uniting Commuities for [further advice](https://www.unitingcommunities.org/service/legal-services/consumer-credit), as your loan is covered by different laws than this application. 
 
 buttons:
   - Restart the application: restart
@@ -124,15 +120,13 @@ buttons:
 event: hardship_endpoint
 question: Possible Hardship 
 subquestion: | 
-  Based on the answers your provided it seems unlikely that you are dealing with a Responsible Lending Issue. 
+  It seems that you are dealing with financial hardship. You may be able to request financial hardship assistance from your lender, such as a repayment plan.
   
-  
-  However, that doesn't mean you aren't experiencing financial hardship. If you are struggling to repay your loans you may be able to request financial hardship assistance from your lender, such as a repayment plan.
-  
-  
+    You can reach out to the [Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit) for further assistance. The sooner you ask for help the better.
+    
   Please read more about financial hardship assistance and how to apply for it [here](https://moneysmart.gov.au/managing-debt/financial-hardship). 
   
-  You can also reach out to the [Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit) for further assistance. The sooner you ask for help the better.
+
   
 buttons:
   - Restart the application: restart
@@ -144,116 +138,24 @@ buttons:
 event: irresponsible_lending_endpoint
 question: Possible Responsible Lending Issue
 subquestion: | 
-  It is 
+  ####It is 
   % if issue_type == 'irresponsible_direction1':
   **likely**
   % elif issue_type == 'irresponsible_direction2' or issue_type == 'irresponsible_direction3':
   **possible**
   % endif
   that you are dealing with a responsible lending issue. 
-  Read the following sections to better understand your issue. 
-
-
-
-  % if asked_why or asked_situation or statements_account or actual_expenses:
-  ####Lender's Responsibilities
-  *It is your lender's responsibility to look into your financial situation before giving you a loan.* 
   
-  *Based on what you have told us, these things indicate that your lender did not meet this obligation:*
-  % endif
+  #####Next Steps
+   1. Download the document below for more details.
+   2. Request your 'preliminary assessment' from your lender. 
+   3. Seek legal help from a service like [The Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit).
+   4. Provide the document below and your 'preliminary assessment' to the legal service you are seeking help from.
   
-  % if asked_why:
-    - Your lender did not ask what you wanted to use the loan for.
-  % endif 
+attachment:
+  docx template file: UC2_Jinja.docx
+  filename: responsible_lending_issue_report
   
-  % if asked_situation:
-    - Your lender did not ask you about your financial situation before giving you the loan.
-  % endif   
-  
-  % if statements_account:
-    - Your lender did not inspect your bank statements before giving you the loan.
-  % endif   
- 
-  % if actual_expenses:
-    - Your lender did not ask you about your actual living expenses, or obtain statements of your expenses before giving you the loan.
-  % endif   
-
-
-
-  % if (elderly or illness or language or other_loans or house_prices):
-  ####Your Situation at the Time of Receiving the Loan
-  *There are certain factors that may indicate you were in a vulnerable or unsuitable position at the time of getting your loan. While these factors don't immediately mean you should not have been given a loan, they are important to consider.*  
-  
-  *Based on what you have told us, these factors are relevant here:*
-  % endif
-  
-  % if elderly:
-  - You were over the age of 65 when you got the loan.
-  % endif 
-  
-  %if illness: 
-  - You had an illness or disability when you got the loan.
-  % endif
-  
-  % if language:
-  - You could not understand English when you got the loan.
-  % endif
-  
-  % if other_loans:
-  - You were still paying off other loans when you got this loan.
-  % endif 
-  
-  
-
-  % if interest_only or investment_property:
-  ####Nature of your Loan
-  *The nature of some loans make them more likely to be unsuitable.* 
-  
-  *You indicated that these factors are relevant for you:*
-  % endif
-  
-  % if interest_only:
-  - Your loan was an 'interest only' loan.
-  % endif 
-  
-  %if investment_property: 
-  - Your home was used as security for a loan used to buy an investment property.
-  % endif
-  
-  
-  % if poverty or substantial_hardship_indicator:
-  ####Hardship Indicators
-  *Financial hardship is also an indicator that you may be dealing with a responsible lending issue.*
-  
-  *Based on what you told us, these factors indicate that you may be suffering from* 
-  % if substantial_hardship_indicator:
-  *substantial*
-  % endif  
-  *hardship:* 
-  % endif
-  
-  % if substantial_hardship_indicator:
-    - You have indicated that you would need to sell your home in order to pay off this loan. In the law this is a serious indicator of substantial financial hardship. You should seek help as soon as possible.
-  % endif    
-  
-  % if poverty: 
-  - Our hardship calculator shows us that your loan repayments place you below the Henderson Poverty Index, this is a strong sign that you are experiencing financial hardship. You should seek help as soon as possible
-  % endif
-
-  
-  ####Next Steps
-   Now that you are aware that you are 
-  % if issue_type == 'irresponsible_direction1':
-  **likely**
-  % elif issue_type == 'irresponsible_direction2' or issue_type == 'irresponsible_direction3':
-  **possibly**
-  % endif
-  dealing with an Irresponsible Lending Issue, you should seek legal help. 
-  [The Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit) may be able to provide help if you are located in South Australia. 
-  
-  
-  It may be useful to ask your lender for a copy of a paper called "Section 129 Assessment" and take this with you to get advice from a lawyer. This form will provide information about the assessment they undertook before giving you the loan and help your lawyer to make a case that you are dealing with a responsible lending issue.
-
 buttons:
   - Restart the application: restart
     color: dark
