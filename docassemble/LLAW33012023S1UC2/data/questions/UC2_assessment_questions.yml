@@ -3,21 +3,19 @@ include:
   - UC2_definitions.yml
 ---
 # hardship calculator questions 
-question: Hardship Calculator Questions
+question: Is your loan pushing your into poverty?
 subquestion: | 
-  Your answers to these questions are put into a hardship calculator to see if your loan repayments put you below the Henderson Poverty Indicator.
+  Your answers will be compared to the Henderson Poverty Line to determine whether your loan repayments may be pushing you into poverty.
 fields: 
   - What is your weekly income?: weekly_income
     datatype: currency
-  - How much money do you spend on housing each week?: regular_expenses
-    datatype: currency
-  - How much are the payments you are expected to make towards your loan on a weekly basis?: loan_repayments
+  - How much are you expected to pay towards your loan each week?: loan_repayments
     datatype: currency
 ---
 code: |
-  weekly_money = weekly_income - regular_expenses - loan_repayments
+  weekly_money = weekly_income - loan_repayments
 ---
-# $611.27 is the weekly HPI for a single adult inclusive of housing in March 2022.
+# $611.27 is the weekly Henderson Poverty Line for a single adult inclusive of housing in March 2022.
 code: |
   if weekly_money <= 611.27:
     poverty = True
@@ -26,7 +24,7 @@ code: |
 ---
 question: Substantial Hardship Indicators
 subquestion: | 
-  Under the law, these factors indicate **substantial** hardship.
+  You should not be given a loan that would cause you substantial hardship. Under the law, these factors indicate substantial hardship.
 fields: 
   - "To make your repayments, would you need to sell the place you live?": substantial_hardship_indicator
     datatype: yesnoradio
@@ -36,12 +34,13 @@ fields:
 
   - "At the time of getting this loan, did you have any other loans you were still paying off?": other_loans
     datatype: yesnoradio
-# National Credit Act s 131(3A) and s 133(3A) - if it is a small amount credit contract, and at time of applyig still in debt to other loans, then presumed that the consumer could only comply with substantial hardship unless contrary is proved 
+# National Credit Act s 131(3A) and s 133(3A) - if it is a small amount credit contract, and at time of applying still in debt to other loans, then presumed that the consumer could only comply with substantial hardship unless contrary is proved 
 
 ---
 # Questions about your lender 
-question: | 
-  This is a series of questions about your lender.
+question: Questions about your lender
+subquestion: | 
+  Your lender has an obligation to investigate you before giving you a loan. These questions help determine whether they have met this obligation. 
 fields: 
   - "Did your lender ask what you wanted the loan for?": asked_why
     datatype: noyesradio
@@ -60,24 +59,28 @@ fields:
 # National Credit Act s 117(1)(c) and s 130(1)(d)
 ---
 # Questions about your situation at the time of the loan
-question: | 
-  This is a series of questions about your situation at the time of the loan.
+question: Your situation 
+subquestion: | 
+  If you were in a vulnerable situation at the time of getting your loan, your lender may have even more obligations. 
+  
 fields: 
   - "At the time of getting your loan were you over the age of 65?": elderly
     datatype: yesnoradio
-  - "At the time of getting your loan did you have an illness/disability?": illness
+    
+  - "At the time of getting your loan did you have an serious illness/disability?": illness
     datatype: yesnoradio
+    
   - "At the time of getting your loan could you understand English?": language
     datatype: noyesradio
-  - "Was your ability to repay the loan dependent on rising house prices?": house_prices
-    datatype: yesnoradio
 ---
 # Questions about your loan
-question: | 
-  This is a series of questions about your loan. 
+question: The nature of your loan
+subquestion: | 
+  The nature of some loans makes them much more likely to be unsuitable. 
 fields: 
   - "Was your loan an 'interest only' loan?": interest_only 
     datatype: yesnoradio
+    
   - "Did you use your home as security when buying an investment property?": investment_property 
     datatype: yesnoradio
 ---
