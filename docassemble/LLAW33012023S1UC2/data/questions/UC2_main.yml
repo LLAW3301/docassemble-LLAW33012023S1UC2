@@ -18,12 +18,11 @@ code: |
   set_parts(logo=MJFlogo_string)
 ---
 mandatory: true
-question: Welcome <i class="fa-solid fa-hand-holding-heart"></i>
+question: Welcome to the **Preliminary Loan Inspector** <i class="fa-solid fa-hand-holding-heart"></i>
 subquestion: |
-  Welcome to the Consumer Credit Law Centre of South Australia’s **Preliminary Loan Inspector**.
+  Are you struggling to repay a loan in Australia? This app can help you work out if you are dealing with a responsible lending issue. 
   
-  
-  This app is for people in **Australia** who are **struggling to repay a loan**. The questions will help determine if you are dealing with a responsible lending issue.
+    [View privacy policy here](https://www.unitingcommunities.org/about-us/privacy-policy) <i class="fa-solid fa-arrow-up-right-from-square"></i>
   
 buttons:
   - Help me with my loan: continue
@@ -32,12 +31,11 @@ buttons:
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
     
 under: |   
-  **Disclaimer**
-  
-  *This application does not offer legal advice and is only a tool to suggest what type of loan issue you may be dealing with to improve your understanding of your legal rights.*
-  
+  <hr>
+  <details>
+  <summary>Disclaimer</summary>
+  <p>This application does not offer legal advice and is only a tool to suggest what type of loan issue you may be dealing with to improve your understanding of your legal rights.</p>
 
-  [View privacy policy here](https://www.unitingcommunities.org/about-us/privacy-policy) <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
 ---
 mandatory: True
@@ -129,7 +127,7 @@ subquestion: |
     Reach out to the [Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit) for further assistance. The sooner you ask for help the better.
     You may be able to request hardship assistance from your lender, such as a repayment plan.
     
-  Please read more about financial hardship assistance and how to apply for it [here](https://moneysmart.gov.au/managing-debt/financial-hardship). 
+  Please read more about financial hardship assistance and how to apply for it [here](https://moneysmart.gov.au/managing-debt). 
   
 buttons:
   - Restart the application: restart
@@ -149,10 +147,16 @@ subquestion: |
   % endif
   that you are dealing with a responsible lending issue. 
   
-  
+  <hr>
   #####Next Steps
+  
+  
    1. Download and read your report below.
+   
+   
    2. Request your 'preliminary assessment' from your lender. 
+   
+   
    3. Bring these documents with you when you seek legal help from a service like [The Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit).
   
 attachment:
