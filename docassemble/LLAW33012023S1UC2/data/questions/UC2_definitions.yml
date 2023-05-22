@@ -2,57 +2,32 @@
 ---
 auto terms:
   Personal Purpose: |
-    Money that is used for large purchases for an individual such as a house, car, or other expensive purchase.
-  Business Purpose: |
-    Money that is put towards business exclusive activities like paying wages, buying stock, and paying invoices counts as business purposes.
+    Such as a house, car, or other personal purchase. Not for business purposes like paying wages.  
   Licensed Credit Lender: |
-    A person/company permitted by the law to lend money to others like banks, credit unions, mortgage brokers, and online lenders.
-  Interest only period: |
-    A scheduled space of time where you only pay the interest on a loan and not the original amount of it.
-  interest only period: |  
-    A scheduled space of time where you only pay the interest on a loan and not the original amount of it.
+    A person/company permitted by the law to lend money to others like banks, credit unions, mortgage brokers, and online lenders. Not family/friends or from another business.
   interest only: |
-    An interest only loan is a loan which contains an interest only period, which is a scheduled space of time where you only pay the interest on a loan and not the original amount of it.
-  changing my personal circumstances: |
-    Any changes that can significantly affect your living and costs like:
-    - Moving houses
-    - A serious health issue or injury.
-    - Changes in income or employment.
-    - Marital changes such as divorce.
+    A scheduled space of time where you only pay the interest on a loan and not the original amount of it.
   Statement of expenses : |
     Can include documents like bills, rental agreements, and mortgage agreements.
-  ##Illness/disability: |
-  ##  This must be a factor that impacts your ability to earn an income.
-  ## commentening this out for now - the disability question is about if someone is vulnerable - amadio style, is the contract unconsionable kind of thing, so I don't think this definition is relevant ?
   Investment property : |
     A property someone owns and uses to generate income, not to live in.
-  Financial hardship : |
+  hardship : |
     When a loan stops someone from paying essential living costs (rent, bills, food, etc.).
-  ##Unsuitable : |
-  ##  A loan that is hard to pay off from the beginning of a loaning period without signifcant change.
-  ##also commenting this one out since it doesn't make sense in every case, and since it puts the definition on every case - might need to add more words to specify exactly where you want to use this - also I don't know if the definition of unsuitable is super spot on, maybe reword
   Financial situation : |
-    Refers to the situation you financially find yourself in, such as your financial stability, income, debts, and all factors that make up the cirumstances your money is committed to.
+    Refers to your financial stability, income, debts, and all factors that make up the cirumstances your money is committed to.
   Bank statements : |
     A document that summarises what money goes in and out of a bank account.
-  Security for a Loan : |
-    When something like a house is used as secuirty for a loan it is promsied to someone else that you owe money to. In the event that you cannot repay the loan, this 'security' is taken instead.
-  Henderson Poverty Index: |
-    The index is developed by the University of Melbourne and sets out how much money a person needs each week to not be in poverty. It is updated every quarter. The most recent figure is $611.27 (March, 2022). 
- # The wording below will probably be changed - but since we need a weekly basis of payments I figure we put this in just in case
+  security: |
+    In the event that you cannot repay the loan, this 'security' is taken instead.
+  Henderson Poverty Line: |
+    The line sets out how much money a person needs each week to not be in poverty. It is updated every quarter. The most recent figure is $611.27 inclusive of housing (March, 2022). 
   weekly income: |
-    This is after tax is withheld. If your payment is not weekly, the following calculation is suggested:
-    / If you make repayments fortnightly: Divide by 2 / If you make repayments monthly: Divide by 4 / If you make repayments quarterly: Divide by 13 / If you make repayments yearly: Divide by 52
+    After tax. If you are paid fortnightly: Divide by 2 / If you are paid monthly: Divide by 4 / If you are paid quarterly: Divide by 13 / If you are paid yearly: Divide by 52
   Responsible Lending Issue: | 
-    When receiving a loan, the company giving you the money must make sure that the loan is not unsuitable for you. If they gave you the loan without making sure it was not unsuitable, you may be entitled to be put back into the financial situation you were in before receiving the loan.
-  foreseeable at the time of the loan: |
-    These are things that your bank should have known you were likely to deal with during the course of your loan repayments if they investigated your life. For example, if you were pregnant when you received the loan, it was foreseeable that you would have to pay school fees in the next ten years.
-  work out: |
-    This calculation model uses the Henderson Poverty Index to calculate whether you are living below the poverty line due to your loan repayments.
-  make in a week: |
-    If you do not make the same amount every week perform an average calculation. Take the money you make in a year and divide it by 52.
+    Your lender has an obligation not to give you a loan if it is unsuitable. If your lender did not meet their obligation, you may be able to get out of your loan.
   preliminary assessment: | 
-    If you took out your loan in the past seven years your lender must provide you with a free copy of the preliminary assessment they conducted when deciding whether to provide you with your loan. 
-  hardship calculator: | 
-    income - expenses - loan repayments = money left to live on. If the money you have left to live on is less than the Henderson Poverty Index then you are experiencing financial hardship. 
+    This is the investigation your lender undertook when deciding whether to give you a loan.
+  each week: |
+    If your payment is not weekly, the following calculation is suggested:
+    / If you make repayments fortnightly: Divide by 2 / If you make repayments monthly: Divide by 4 / If you make repayments quarterly: Divide by 13 / If you make repayments yearly: Divide by 52
 ---

@@ -10,16 +10,18 @@ fields:
     datatype: noyesradio
     
 under: | 
+  <hr>
   The current law covering loans was introduced on the 1st of July 2010. This means loans taken out before the 1st of July 2010 are covered by different laws.
 ---
 # Purpose of loan
 question: Why did you get your loan? <i class="fa-solid fa-person-circle-check"></i>
 subquestion: | 
 fields: 
-  - Did you get this loan for a personal purpose (not a business purpose)?: correct_purpose
+  - Did you get this loan for a personal purpose?: correct_purpose
     datatype: yesnoradio
     
 under: | 
+  <hr>
   Responsible lending protections are typically only provided for personal loans.
 ---
 # Is it too short
@@ -30,16 +32,18 @@ fields:
     datatype: yesnoradio
 
 under: | 
+  <hr>
   Short loans, under 62 days, are subject to different rules.
 ---
 # The correct borrower
 question: Where did your loan come from? <i class="fa-solid fa-piggy-bank"></i>
 subquestion: | 
 fields: 
-  - Did you get the loan from a licensed credit lender? (not family/friends or from another business)?: correct_borrower
+  - Did you get the loan from a licensed credit lender?: correct_borrower
     datatype: yesnoradio
     
 under: | 
+  <hr>
   Responsible lending laws apply to licensed credit providers, or those that provide other credit assistance.
   
 # National Credit Act Chapter 3 - each division in the chapter is aimed at different licensees offering different services.
