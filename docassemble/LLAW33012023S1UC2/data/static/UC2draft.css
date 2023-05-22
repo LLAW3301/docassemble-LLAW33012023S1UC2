@@ -90,3 +90,16 @@
   border-color: rgba(255,255,255);
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7)
 }
+.my-image {
+  background-image: url(Investigation_Image.png);
+  width: 500px;
+  height: 250px;
+}
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item">
+        <img src="Investigation_Image.png" alt="Investigation Image"
+        <span>Description 1</span>
+      </div>
+    </div>
