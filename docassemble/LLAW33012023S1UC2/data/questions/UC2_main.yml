@@ -18,15 +18,11 @@ code: |
   set_parts(logo=MJFlogo_string)
 ---
 mandatory: true
-question: Welcome <i class="fa-solid fa-hand-holding-heart"></i>
+question: Welcome to the **Preliminary Loan Inspector** <i class="fa-solid fa-hand-holding-heart"></i>
 subquestion: |
-  Welcome to the Consumer Credit Law Centre of South Australia’s **Preliminary Loan Inspector** application.
+  Are you struggling to repay a loan in Australia? This app can help you work out if you are dealing with a responsible lending issue. 
   
-  
-  This app is for people in Australia who are struggling to repay a loan. If that is not you, please press **Exit**.
-  
-  
-  You will be asked several questions to help see if you may be dealing with a Responsible Lending Issue.
+    [View privacy policy here](https://www.unitingcommunities.org/about-us/privacy-policy) <i class="fa-solid fa-arrow-up-right-from-square"></i>
   
 buttons:
   - Help me with my loan: continue
@@ -35,12 +31,11 @@ buttons:
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
     
 under: |   
-  **Disclaimer**
-  
-  *This application does not offer legal advice and is only a tool to suggest what type of loan issue you may be dealing with to improve your understanding of your legal rights.*
-  
+  <hr>
+  <details>
+  <summary>Disclaimer</summary>
+  <p>This application does not offer legal advice and is only a tool to suggest what type of loan issue you may be dealing with to improve your understanding of your legal rights.</p>
 
-  [View privacy policy here](https://www.unitingcommunities.org/about-us/privacy-policy) <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
 ---
 mandatory: True
@@ -120,13 +115,19 @@ buttons:
 event: hardship_endpoint
 question: Possible Hardship 
 subquestion: | 
-  It seems that you are dealing with financial hardship. You may be able to request financial hardship assistance from your lender, such as a repayment plan.
+  It seems that you are dealing with 
+  % if substantial_hardship_indicator or other_loans: 
+  **substantial** 
+  % endif 
+  hardship. 
+  % if substantial_hardship_indicator or other_loans: 
+  Substantial hardship is a serious issue and you should seek help as soon as possible.
+  % endif
   
-    You can reach out to the [Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit) for further assistance. The sooner you ask for help the better.
+    Reach out to the [Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit) for further assistance. The sooner you ask for help the better.
+    You may be able to request hardship assistance from your lender, such as a repayment plan.
     
-  Please read more about financial hardship assistance and how to apply for it [here](https://moneysmart.gov.au/managing-debt/financial-hardship). 
-  
-
+  Please read more about financial hardship assistance and how to apply for it [here](https://moneysmart.gov.au/managing-debt). 
   
 buttons:
   - Restart the application: restart
@@ -136,9 +137,9 @@ buttons:
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
 ---
 event: irresponsible_lending_endpoint
-question: Possible Responsible Lending Issue
+question: Time to seek help
 subquestion: | 
-  ####It is 
+  It is 
   % if issue_type == 'irresponsible_direction1':
   **likely**
   % elif issue_type == 'irresponsible_direction2' or issue_type == 'irresponsible_direction3':
@@ -146,11 +147,17 @@ subquestion: |
   % endif
   that you are dealing with a responsible lending issue. 
   
+  <hr>
   #####Next Steps
-   1. Download the document below for more details.
+  
+  
+   1. Download and read your report below.
+   
+   
    2. Request your 'preliminary assessment' from your lender. 
-   3. Seek legal help from a service like [The Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit).
-   4. Provide the document below and your 'preliminary assessment' to the legal service you are seeking help from.
+   
+   
+   3. Bring these documents with you when you seek legal help from a service like [The Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit).
   
 attachment:
   docx template file: UC2_Jinja.docx
