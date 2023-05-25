@@ -1,6 +1,5 @@
 ---
 # Including other files
-# this text is just a test
 include:
   - UC2_threshold_questions.yml
   - UC2_directing_questions.yml
