@@ -11,7 +11,10 @@ fields:
     
 under: | 
   <hr>
-  The current law covering loans was introduced on the 1st of July 2010. This means loans taken out before the 1st of July 2010 are covered by different laws.
+  The [amended legislation](https://www.legislation.gov.au/Details/C2020C00215) covering loans was introduced on the 1st of July 2010. This means loans taken out before the 1st of July 2010 are covered by different laws.
+  
+features:
+  question back button: True
 ---
 # Purpose of loan
 question: Why did you get your loan? <i class="fa-solid fa-person-circle-check"></i>
