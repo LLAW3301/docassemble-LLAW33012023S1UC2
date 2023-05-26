@@ -31,12 +31,12 @@ under: |
 question: How long is your loan repayment? <i class="fa-solid fa-hourglass-start"></i>
 subquestion: | 
 fields: 
-  - Do you have more than 62 days to repay the loan from the date of getting it?: correct_repayment_time
+  - Do you have more than 62 days to repay the loan?: correct_repayment_time
     datatype: yesnoradio
 
 under: | 
   <hr>
-  Short loans, under 62 days, are subject to different rules.
+  Short loans that are under 62 days are subject to different rules. 
 ---
 # The correct borrower
 question: Where did your loan come from? <i class="fa-solid fa-piggy-bank"></i>

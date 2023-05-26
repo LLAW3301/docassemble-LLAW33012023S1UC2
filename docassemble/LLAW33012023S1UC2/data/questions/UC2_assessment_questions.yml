@@ -3,7 +3,7 @@ include:
   - UC2_definitions.yml
 ---
 # hardship calculator questions 
-question: Is your loan pushing your into poverty?
+question: Is your loan pushing you into poverty? <i class="fa-solid fa-dollar-sign"></i>
 subquestion: | 
   Your answers will be compared to the Henderson Poverty Line to determine whether your loan repayments may be pushing you into poverty.
 fields: 
@@ -38,9 +38,9 @@ fields:
 
 ---
 # Questions about your lender 
-question: Questions about your lender <i class="fa-solid fa-pen"></i>
+question: Questions About Your Lender <i class="fa-solid fa-pen"></i>
 subquestion: | 
-  Your lender has to make reasonable inquiries before giving you a loan. These questions help determine whether they have met this obligation. 
+  Your lender must make reasonable inquiries before giving you a loan. These questions will help determine whether they have done so.
 fields: 
   - "Did your lender ask what you wanted the loan for?": asked_why
     datatype: noyesradio
@@ -54,12 +54,12 @@ fields:
     datatype: noyesradio
 # National Credit Act s 117(1)(c) and s 130(1)(d)
     
-  - "Did your lender ask about your actual living expenses or obtain statements of your expenses before giving you the loan?": actual_expenses
+  - "Did your lender ask about your actual living expenses, or obtain statements of your expenses, before giving you the loan?": actual_expenses
     datatype: noyesradio
 # National Credit Act s 117(1)(c) and s 130(1)(d)
 ---
 # Questions about your situation at the time of the loan
-question: Your situation
+question: Your Situation <i class="fa-solid fa-wheelchair"></i>
 subquestion: | 
   If you were in a vulnerable situation at the time of getting your loan, your lender may have to make further inquiries. 
   
@@ -67,14 +67,14 @@ fields:
   - "At the time of getting your loan were you over the age of 65?": elderly
     datatype: yesnoradio
     
-  - "At the time of getting your loan did you have an serious illness/disability?": illness
+  - "At the time of getting your loan did you have a serious illness/disability?": illness
     datatype: yesnoradio
     
-  - "At the time of getting your loan were you provided documents in your perferred language?": language
+  - "Did your lender provide documents in your perferred language?": language
     datatype: noyesradio
 ---
 # Questions about your loan
-question: The nature of your loan <i class="fa-solid fa-house-circle-exclamation"></i>
+question: The Nature of Your Loan <i class="fa-solid fa-house-circle-exclamation"></i>
 subquestion: | 
   The nature of some loans makes them much more likely to be unsuitable. 
 fields: 
