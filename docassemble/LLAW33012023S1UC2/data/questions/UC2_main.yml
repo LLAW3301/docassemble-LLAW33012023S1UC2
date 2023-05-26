@@ -1,4 +1,24 @@
 ---
+metadata:
+  title: |
+    Responsible Loan Check
+  short title: | 
+    Loan Check
+  description: |
+    An application for helping those struggling with a loan to determine whether they may be dealing with a responsible lending issue.
+  authors:
+    - name: Allison Mason
+      organization: Flinders University
+    - name: Phoebe Curyer
+      organization: Flinders University
+    - name: Bianca-Dakota Elliot
+      organization: Flinders University
+    - name: Matthew Dell'Antonio
+      organization: Flinders University
+    - name: Lily Greaves
+      organization: Flinders University
+  revision_date: 2015-09-28
+---
 # Including other files
 include:
   - UC2_threshold_questions.yml
@@ -8,6 +28,8 @@ include:
 ---
 features:
   css: UC2draft.css
+  debug: False
+  hide standard menu: True
 ---
 objects:
   - MJFlogo: DAStaticFile.using(filename='uniting-communities-logo.png')
@@ -16,6 +38,19 @@ initial: True
 code: |
   MJFlogo_string= '<div class="media"><img src="{}" class="mr-3" height="50"><div class="media-body"></div></div>'.format(MJFlogo.url_for())
   set_parts(logo=MJFlogo_string)
+---
+# attribute work to Flinders and UC
+default screen parts:
+  post: |
+    <div style="display: flex; height: 200px; align-items: flex-end; flex-direction: row-reverse">
+    <div style="margin: 5px"><img src="https://staff.flinders.edu.au/etc.clientlibs/flinders/clientlibs/clientlib-site/resources/images/flinderuni_main_logo_black.png" height="40">
+    </div>
+    <div style="margin: 5px; text-align: right">
+    <cite><small><i>
+    Developed by Flinders University in collaboration with The Consumer Credit Law Centre of South Australia
+    </i></small></cite>
+    </div>
+    </div>
 ---
 mandatory: true
 question: |

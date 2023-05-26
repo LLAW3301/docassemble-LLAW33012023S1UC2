@@ -1,6 +1,6 @@
 # docassemble.LLAW33012023S1UC2
 
-A docassemble extension.
+This application was created for The Consumer Credit Law Centre of South Australia. It aims to help people who are struggling to repay their loans identify whether they are dealing with a responsible lending issue. People often do not realise they can seek help for loans they should never have been given in the first place. This application aims to increase peoples' awareness of their legal rights and encourage them to seek help
 
 ## Author
 
