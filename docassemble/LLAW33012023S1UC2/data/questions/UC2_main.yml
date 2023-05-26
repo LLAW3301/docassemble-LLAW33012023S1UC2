@@ -166,13 +166,11 @@ subquestion: |
  
    
   <img src="https://docassemble.flinders.edu.au/playgroundstatic/LLAW33012023S1UC2/408/3.JPG" alt="Seeking legal help" width="1000" height="650">
-  
-  Bring these documents with you when you seek legal help from [The Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit).
 
+attachments:
+    name: Responsible Lending Issue Report
+    docx template file: UC2_Jinja.docx
 
-attachment:
-  docx template file: UC2_Jinja.docx
-  filename: responsible_lending_issue_report
   
 buttons:
   - Restart the application: restart
