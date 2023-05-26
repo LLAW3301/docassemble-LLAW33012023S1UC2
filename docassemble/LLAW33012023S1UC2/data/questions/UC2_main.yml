@@ -18,16 +18,20 @@ code: |
   set_parts(logo=MJFlogo_string)
 ---
 mandatory: true
-question: Welcome to the **Preliminary Loan Inspector** <i class="fa-solid fa-hand-holding-heart"></i>
+question: |
+  Welcome to the **Responsible Lender Check** <i class="fa-solid fa-hand-holding-heart"></i>
+
 subquestion: |
+  > Helping you check your loan.
+  
   Are you struggling to repay a loan in Australia? This app can help you work out if you are dealing with a responsible lending issue. 
   
     [View privacy policy here](https://www.unitingcommunities.org/about-us/privacy-policy) <i class="fa-solid fa-arrow-up-right-from-square"></i>
   
 buttons:
-  - Help me with my loan: continue
+  - Help me with my loan: continue 
   - Exit: exit
-    color: light
+    color: dark
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
     
 under: |   
@@ -137,7 +141,7 @@ buttons:
     url: https://www.unitingcommunities.org/service/legal-services/consumer-credit
 ---
 event: irresponsible_lending_endpoint
-question: Time to seek help
+question: Time to seek help <i class="fa-sharp fa-solid fa-seal-exclamation"></i>
 subquestion: | 
   It is 
   % if issue_type == 'irresponsible_direction1':
@@ -151,17 +155,21 @@ subquestion: |
   #####Next Steps
   
   
-   1. Download and read your report below.
-   
-   <img src="https://cdn.pixabay.com/photo/2018/07/23/19/30/planing-3557678_640.jpg" alt="Image 1" width="500" height="250">
-   
-   2. Request your 'preliminary assessment' from your lender. 
    
   
-   3. Bring these documents with you when you seek legal help from a service like [The Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit).
+   <img src="https://docassemble.flinders.edu.au/playgroundstatic/LLAW33012023S1UC2/408/1final.JPG" alt="Download report" width="1000" height="650">
    
-  <img src="https://wpassets.s3.ap-southeast-2.amazonaws.com/wp-content/uploads/2021/05/24074526/4093-adelaide_UCity_WoodsBagot_TrevorMein_03.jpg" alt="Image 1" width="500" height="250">
+ 
   
+  <img src="https://docassemble.flinders.edu.au/playgroundstatic/LLAW33012023S1UC2/408/2.JPG" alt="Document being requested" width="1000" height="650">
+  
+ 
+   
+  <img src="https://docassemble.flinders.edu.au/playgroundstatic/LLAW33012023S1UC2/408/3.JPG" alt="Seeking legal help" width="1000" height="650">
+  
+  Bring these documents with you when you seek legal help from [The Consumer Credit Law Centre of South Australia](https://www.unitingcommunities.org/service/legal-services/consumer-credit).
+
+
 attachment:
   docx template file: UC2_Jinja.docx
   filename: responsible_lending_issue_report
