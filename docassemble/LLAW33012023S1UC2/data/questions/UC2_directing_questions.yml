@@ -1,4 +1,7 @@
 ---
+code: | 
+  default_directing = "irresponsible_direction1"
+---
 # to determine which endpoint - hardship or irresponsible lending
 question: Repaying Your Loan <i class="fa-solid fa-money-check-dollar"></i>
 subquestion: | 
@@ -9,6 +12,8 @@ fields:
       - It has always been hard to make the payments on my loan.: irresponsible_direction1
         help: |
           You either couldn't make payments on time, or you had to go without necessities like rent or food to make your payments.
+        default: | 
+          ${ default_directing }
           
       - It only became hard to make payments on my loan after the interest only period finished: irresponsible_direction2
         help: |
@@ -21,4 +26,6 @@ fields:
       - It became hard to make my payments because something unexpected happened, changing my personal circumstances.: hardship_direction
         help: |
           Something is unexpected if - when your lender investigated you - they could not have predicted it would happen. For example, if you were a healthy person when you applied, with no medical history, it would be unexpected for you to develop a serious disease. 
+          
+
 ---

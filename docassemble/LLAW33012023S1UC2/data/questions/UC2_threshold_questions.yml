@@ -2,13 +2,18 @@
 include: 
   - UC2_definitions.yml
 ---
+code: |
+  default_threshold = True
+---
 # Date loan is taken out
 question: When did you get your loan? <i class="fa-solid fa-calendar-days"></i>
 subquestion: | 
 fields: 
   - Did you get this loan before the 1st of July 2010?: correct_date
     datatype: noyesradio
-    
+    default: |
+      ${ default_threshold }
+
 under: | 
   <hr>
   The [amended legislation](https://www.legislation.gov.au/Details/C2020C00215) covering loans was introduced on the 1st of July 2010. This means loans taken out before the 1st of July 2010 are covered by different laws.
@@ -22,6 +27,8 @@ subquestion: |
 fields: 
   - Did you get this loan for a personal purpose?: correct_purpose
     datatype: yesnoradio
+    default: |
+      ${ default_threshold }
     
 under: | 
   <hr>
@@ -33,6 +40,8 @@ subquestion: |
 fields: 
   - Do you have more than 62 days to repay the loan?: correct_repayment_time
     datatype: yesnoradio
+    default: |
+      ${ default_threshold }
 
 under: | 
   <hr>
@@ -44,7 +53,9 @@ subquestion: |
 fields: 
   - Did you get the loan from a licensed credit lender?: correct_borrower
     datatype: yesnoradio
-    
+    default: |
+      ${ default_threshold }
+      
 under: | 
   <hr>
   Responsible lending laws apply to licensed credit providers, or those that provide other credit assistance.
