@@ -1,6 +1,6 @@
 ---
 # to determine which endpoint - hardship or irresponsible lending
-question: Repaying your loan <i class="fa-solid fa-money-check-dollar"></i>
+question: Repaying Your Loan <i class="fa-solid fa-money-check-dollar"></i>
 subquestion: | 
 fields: 
   - Please select the option that sounds the most like you: issue_type
@@ -16,9 +16,9 @@ fields:
       
       - It became hard to make payments on my loan after something happened that was foreseeable at the time of the loan.: irresponsible_direction3
         help: |
-          Something is foreseeable if, when your lender investigated you, they could have predicted it would happen. For example, if you were pregnant it was foreseeable you would have to pay school fees in a few years. Another example, if you had a long-term disease, it was foreseeable you may stop being able to work.
+          Something is foreseeable if - when your lender investigated you - they could have predicted it would happen. For example, if you were pregnant it was foreseeable you would have to pay school fees in a few years. Another example, if you had a long-term disease, it was foreseeable you may stop being able to work.
           
       - It became hard to make my payments because something unexpected happened, changing my personal circumstances.: hardship_direction
         help: |
-          Something is unexpected if, when your lender investigated you, they could not have predicted it would happen. For example, if you were a healthy person when you applied, with no medical history, it would be unexpected for you to develop a serious disease. 
+          Something is unexpected if - when your lender investigated you - they could not have predicted it would happen. For example, if you were a healthy person when you applied, with no medical history, it would be unexpected for you to develop a serious disease. 
 ---

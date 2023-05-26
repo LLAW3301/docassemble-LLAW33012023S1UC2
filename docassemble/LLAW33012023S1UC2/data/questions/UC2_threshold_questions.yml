@@ -11,7 +11,10 @@ fields:
     
 under: | 
   <hr>
-  The current law covering loans was introduced on the 1st of July 2010. This means loans taken out before the 1st of July 2010 are covered by different laws.
+  The [amended legislation](https://www.legislation.gov.au/Details/C2020C00215) covering loans was introduced on the 1st of July 2010. This means loans taken out before the 1st of July 2010 are covered by different laws.
+  
+features:
+  question back button: True
 ---
 # Purpose of loan
 question: Why did you get your loan? <i class="fa-solid fa-person-circle-check"></i>
@@ -28,12 +31,12 @@ under: |
 question: How long is your loan repayment? <i class="fa-solid fa-hourglass-start"></i>
 subquestion: | 
 fields: 
-  - Do you have more than 62 days to repay the loan from the date of getting it?: correct_repayment_time
+  - Do you have more than 62 days to repay the loan?: correct_repayment_time
     datatype: yesnoradio
 
 under: | 
   <hr>
-  Short loans, under 62 days, are subject to different rules.
+  Short loans that are under 62 days are subject to different rules. 
 ---
 # The correct borrower
 question: Where did your loan come from? <i class="fa-solid fa-piggy-bank"></i>
