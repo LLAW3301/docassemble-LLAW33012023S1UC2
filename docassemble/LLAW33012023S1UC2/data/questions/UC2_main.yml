@@ -183,7 +183,7 @@ subquestion: |
   % elif issue_type == 'irresponsible_direction2' or issue_type == 'irresponsible_direction3':
   possible
   % endif
-  that you are dealing with a responsible lending issue. 
+  that you are dealing with a responsible lending issue. Follow these next steps and download your report below.
   
   <hr>
   ###Next Steps
