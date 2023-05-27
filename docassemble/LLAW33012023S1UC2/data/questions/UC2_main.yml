@@ -59,7 +59,7 @@ question: |
 subquestion: |
   > Are you struggling to repay a loan in Australia?
   
-   This app can help you work out if you are dealing with a responsible lending issue. 
+   This app can help you work out if you are dealing with a responsible lending issue and provide you with next steps.
   
     [View privacy policy here](https://www.unitingcommunities.org/about-us/privacy-policy) <i class="fa-solid fa-arrow-up-right-from-square"></i>
   
@@ -114,7 +114,7 @@ buttons:
 event: ineligible_endpoint_2
 question: This app can only consider personal loans
 subquestion: |
-    There are different laws covering business loans. Reach out to the [Consumer Credit Law Centre](https://www.unitingcommunities.org/service/legal-services/consumer-credit) for further assistance. 
+    Please reach out to the Consumer Credit Law Centre for [further advice](https://www.unitingcommunities.org/service/legal-services/consumer-credit), as your loan is covered by different laws than this application. 
   
 buttons:
   - Restart: restart
@@ -155,7 +155,7 @@ question: Possible Hardship
 subquestion: | 
   It seems that you are dealing with 
   % if substantial_hardship_indicator or other_loans: 
-  **substantial** 
+  substantial 
   % endif 
   hardship. 
   % if substantial_hardship_indicator or other_loans: 
@@ -205,7 +205,7 @@ subquestion: |
 attachments:
     name: Your Responsible Lending Issue Report
     description: |
-      Download your report below, or email it to yourself.
+      Download your report here, or email it to yourself.
     docx template file: UC2_Jinja.docx
     filename: responsible_lending_issue_report
     valid formats:

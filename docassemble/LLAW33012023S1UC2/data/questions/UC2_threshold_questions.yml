@@ -38,7 +38,7 @@ under: |
 question: How long is your loan repayment? <i class="fa-solid fa-hourglass-start"></i>
 subquestion: | 
 fields: 
-  - Do you have more than 62 days to repay the loan?: correct_repayment_time
+  - Do you have more than 62 days to repay this loan?: correct_repayment_time
     datatype: yesnoradio
     default: |
       ${ default_threshold }
@@ -51,14 +51,14 @@ under: |
 question: Where did your loan come from? <i class="fa-solid fa-piggy-bank"></i>
 subquestion: | 
 fields: 
-  - Did you get the loan from a licensed credit lender?: correct_borrower
+  - Did you get this loan from a licensed credit lender?: correct_borrower
     datatype: yesnoradio
     default: |
       ${ default_threshold }
       
 under: | 
   <hr>
-  Responsible lending laws apply to licensed credit providers, or those that provide other credit assistance.
+  Responsible lending laws apply to licensed credit providers. If your loan came from elsewhere different laws apply.
   
 # National Credit Act Chapter 3 - each division in the chapter is aimed at different licensees offering different services.
 ---

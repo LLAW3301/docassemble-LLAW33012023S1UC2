@@ -34,7 +34,7 @@ code: |
 ---
 question: Substantial Hardship Indicators <i class="fa-solid fa-chart-simple"></i>
 subquestion: | 
-  You should not be given a loan that would cause you substantial hardship. Under the law, these factors indicate substantial hardship.
+  You should not be given a loan that would cause you substantial hardship. The questions below are based on the legal definition of substantial hardship.
 fields: 
   - "To make your repayments, would you need to sell the place you live?": substantial_hardship_indicator
     datatype: yesnoradio
@@ -75,7 +75,7 @@ fields:
       ${ default_yes }
 # National Credit Act s 117(1)(c) and s 130(1)(d)
     
-  - "Did your lender ask about your actual living expenses, or obtain statements of your expenses, before giving you the loan?": actual_expenses
+  - "Did your lender ask about your living expenses, or obtain statements of your expenses, before giving you the loan?": actual_expenses
     datatype: noyesradio
     default : | 
       ${ default_yes }
@@ -84,7 +84,7 @@ fields:
 # Questions about your situation at the time of the loan
 question: Your Situation <i class="fa-solid fa-wheelchair"></i>
 subquestion: | 
-  If you were in a vulnerable situation at the time of getting your loan, your lender may have to make further inquiries. 
+  If you were in a vulnerable situation at the time of getting your loan, your lender may have further obligations to you. 
   
 fields: 
   - "At the time of getting your loan were you over the age of 65?": elderly
@@ -105,7 +105,7 @@ fields:
 # Questions about your loan
 question: The Nature of Your Loan <i class="fa-solid fa-house-circle-exclamation"></i>
 subquestion: | 
-  The nature of some loans makes them much more likely to be unsuitable. 
+  The nature of some loans makes them more likely to be unsuitable. 
 fields: 
   - "Was your loan an 'interest only' loan?": interest_only 
     datatype: yesnoradio
