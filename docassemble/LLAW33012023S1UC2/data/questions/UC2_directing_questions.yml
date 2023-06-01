@@ -11,27 +11,23 @@ fields:
     choices:
       - It has always been hard to make the payments on my loan.: irresponsible_direction1
         help: |
-          You either couldn't make payments on time, or you had to go without necessities like rent or food to make your payments.
+          You either couldn't make payments on time, or you had to go without necessities to make your payments.
         default: | 
           ${ default_directing }
           
       - It only became hard to make payments on my loan after the 'interest only' period finished: irresponsible_direction2
         help: |
-          This only applies to interest only loans. Once the interest only period ended you either couldn't make payments on time, or you had to go without necessities like rent or food to make your payments.
+          Once the interest only period ended you either couldn't make payments on time, or you had to go without necessities to make your payments.
       
       - It became hard to make payments on my loan after something happened that was foreseeable at the time of the loan.: irresponsible_direction3
         help: |
-          Something is foreseeable if - when your lender investigated you - they could have predicted it would happen. 
+          Something is foreseeable if, had your lender investigated you properly, they should have predicted. 
           
-          For example, if you were pregnant it was foreseeable you would have to pay school fees in a few years. 
-          
-          Another example, if you had a long-term disease, it was foreseeable you may stop being able to work.
+          Example: You had a serious disease, and then it prevented you from being able to work.
           
       - It became hard to make my payments because something unexpected happened, changing my personal circumstances.: hardship_direction
         help: |
-          Something is unexpected if - when your lender investigated you - they could not have predicted it would happen. 
+          Something is foreseeable if, had your lender investigated you properly, they could not have predicted it would happen.
           
-          For example, if you were a healthy person when you applied, with no medical history, it would be unexpected for you to develop a serious disease. 
-          
-
+          Example: You were perfectly healthy with no medical history, and then you developed a serious disease.
 ---
